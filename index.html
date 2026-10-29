@@ -8,7 +8,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <style>
     body { font-family: 'Plus Jakarta Sans', sans-serif; }
@@ -17,13 +17,13 @@
 </head>
 <body class="bg-[#070D1A] text-slate-100 antialiased selection:bg-[#0066CC] selection:text-white">
 
-  <!-- ==================== EXECUTIVE HEADER ==================== -->
+  <!-- ==================== HEADER (WITH PROMINENT EN / ES TOGGLE) ==================== -->
   <header class="sticky top-0 z-50 bg-[#0B1528]/95 backdrop-blur-md border-b border-slate-800 shadow-xl">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       
-      <!-- Brand & Distinct Vector Ring Logo -->
+      <!-- Brand Logo & Identity -->
       <a href="#" class="flex items-center gap-3.5 group focus:outline-none" aria-label="NM&M Home">
-        <svg class="shrink-0 transition-transform group-hover:scale-105 duration-200" style="height: 52px; width: 52px;" viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg">
+        <svg class="shrink-0 transition-transform group-hover:scale-105 duration-200" style="height: 50px; width: 50px;" viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <linearGradient id="solidTeal" x1="0%" y1="0%" x2="100%" y2="100%">
               <stop offset="0%" stop-color="#00A88F" />
@@ -53,25 +53,23 @@
 
       <!-- Menu Navigation -->
       <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-slate-300">
-        <a href="#engineering" class="hover:text-blue-400 transition" data-en="Engineering & Tooling" data-es="Ingeniería y Moldes">Engineering &amp; Tooling</a>
+        <a href="#workflow" class="hover:text-blue-400 transition" data-en="Engineering" data-es="Ingeniería">Engineering</a>
         <a href="#why-mexico" class="hover:text-blue-400 transition" data-en="Why Mexico" data-es="Por Qué México">Why Mexico</a>
-        <a href="#specs" class="hover:text-blue-400 transition" data-en="Fleet Specs" data-es="Capacidad de Planta">Fleet Specs</a>
-        <a href="#materials" class="hover:text-blue-400 transition" data-en="Resins & Materials" data-es="Resinas y Materiales">Resins &amp; Materials</a>
+        <a href="#specs" class="hover:text-blue-400 transition" data-en="Plant Capacity" data-es="Capacidad de Planta">Plant Capacity</a>
+        <a href="#materials" class="hover:text-blue-400 transition" data-en="Resins &amp; Materials" data-es="Resinas y Materiales">Resins &amp; Materials</a>
         <a href="#products" class="hover:text-blue-400 transition" data-en="Applications" data-es="Aplicaciones">Applications</a>
-        <a href="#contact" class="hover:text-blue-400 transition" data-en="RFQ & Contact" data-es="Cotizar y Contacto">RFQ &amp; Contact</a>
+        <a href="#contact" class="hover:text-blue-400 transition" data-en="RFQ &amp; Contact" data-es="Cotizar">RFQ &amp; Contact</a>
       </nav>
 
-      <!-- Language Toggle + WhatsApp Action -->
+      <!-- Language Toggle + WhatsApp -->
       <div class="flex items-center gap-3">
-        
-        <!-- Spanish / English Toggle Button -->
-        <button id="langToggleBtn" type="button" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-mono-tech font-bold text-slate-200 bg-slate-800/90 hover:bg-slate-700 border border-slate-700 transition" aria-label="Toggle Language">
+        <!-- Interactive EN/ES Toggle Button -->
+        <button id="langToggleBtn" type="button" class="flex items-center gap-1 px-3 py-1.5 rounded-full text-xs font-mono-tech font-bold text-slate-200 bg-slate-800 hover:bg-slate-700 border border-slate-600 transition shadow-sm cursor-pointer" aria-label="Toggle English / Español">
           <span id="langEnIndicator" class="text-blue-400">EN</span>
-          <span class="text-slate-500">|</span>
+          <span class="text-slate-500">/</span>
           <span id="langEsIndicator" class="text-slate-400">ES</span>
         </button>
 
-        <!-- WhatsApp Button -->
         <a id="headerWhatsappBtn" href="https://wa.me/523322555211?text=Hello%20William,%20I'm%20reaching%20out%20with%20a%20plastic%20injection%20molding%20project" 
            target="_blank" rel="noopener noreferrer" 
            class="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs sm:text-sm font-bold text-white bg-[#25D366] hover:bg-[#20ba5a] transition shadow-lg shadow-[#25D366]/20">
@@ -88,7 +86,7 @@
   <section class="pt-8 pb-16 lg:pt-10 lg:pb-20 bg-[#0F1C33] border-b border-slate-800 relative">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
       
-      <!-- Narrative & Pitch -->
+      <!-- Narrative Left -->
       <div class="lg:col-span-7">
         <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-950/80 border border-blue-500/40 text-blue-400 text-xs font-bold uppercase tracking-wider mb-5">
           <span>🇲🇽</span> <span data-en="Mexico Nearshoring &bull; Guadalajara Industrial Hub" data-es="Nearshoring en México &bull; Hub Industrial de Guadalajara">Mexico Nearshoring &bull; Guadalajara Industrial Hub</span>
@@ -97,14 +95,14 @@
           <span data-en="Start small." data-es="Empieza en corto.">Start small.</span><br/>
           <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-teal-400" data-en="Scale precision production." data-es="Escala a producción de precisión.">Scale precision production.</span>
         </h1>
-        <p class="mt-5 text-base sm:text-lg text-slate-300 leading-relaxed max-w-xl" data-en="High-precision plastics injection molding without bureaucratic barriers. Work directly with our bilingual engineering team on tool design, rapid T1 mold sampling, and door-to-door freight into the U.S. and Canada." data-es="Moldeo por inyección de plástico de alta precisión sin barreras burocráticas. Trabaja directamente con nuestro equipo de ingeniería bilingüe en el diseño de moldes, muestreo rápido T1 y flete directo a EE. UU. y Canadá.">
-          High-precision plastics injection molding without bureaucratic barriers. Work directly with our bilingual engineering team on tool design, rapid T1 mold sampling, and door-to-door freight into the U.S. and Canada.
+        <p class="mt-5 text-base sm:text-lg text-slate-300 leading-relaxed max-w-xl" data-en="High-precision plastics injection molding without bureaucratic friction. Work directly with our bilingual engineering team on tool design, rapid T1 mold sampling, and direct truck freight to your U.S. facility." data-es="Moldeo por inyección de plástico de alta precisión sin barreras burocráticas. Trabaja directamente con nuestro equipo de ingeniería bilingüe en diseño de moldes, muestras rápidas T1 y flete directo a tu planta en EE. UU.">
+          High-precision plastics injection molding without bureaucratic friction. Work directly with our bilingual engineering team on tool design, rapid T1 mold sampling, and direct truck freight to your U.S. facility.
         </p>
 
-        <!-- CTA Cluster -->
+        <!-- CTA Buttons -->
         <div class="mt-8 flex flex-wrap items-center gap-4">
-          <a href="#contact" class="px-7 py-3.5 rounded-xl text-sm font-bold text-white bg-[#0066CC] hover:bg-blue-600 transition shadow-lg shadow-blue-500/25" data-en="Submit 3D CAD for DFM Review &rarr;" data-es="Enviar CAD 3D para Análisis DFM &rarr;">
-            Submit 3D CAD for DFM Review &rarr;
+          <a href="#contact" class="px-7 py-3.5 rounded-xl text-sm font-bold text-white bg-[#0066CC] hover:bg-blue-600 transition shadow-lg shadow-blue-500/25" data-en="Submit CAD for DFM Review &rarr;" data-es="Enviar CAD para Análisis DFM &rarr;">
+            Submit CAD for DFM Review &rarr;
           </a>
           <a id="heroWhatsappBtn" href="https://wa.me/523322555211?text=Hello%20William,%20I%20have%20an%20injection%20molding%20part%20to%20review" 
              target="_blank" rel="noopener noreferrer" 
@@ -113,7 +111,7 @@
           </a>
         </div>
 
-        <!-- Metric Reassurances -->
+        <!-- 3 Reassurances Beneath Buttons -->
         <div class="mt-10 pt-6 border-t border-slate-800 grid grid-cols-3 gap-4 text-xs font-semibold text-slate-300">
           <div>
             <p class="text-xl sm:text-2xl font-black text-white font-mono-tech">10+ Yrs</p>
@@ -130,12 +128,12 @@
         </div>
       </div>
 
-      <!-- Hero Visual -->
+      <!-- Right Visual -->
       <div class="lg:col-span-5">
         <div class="rounded-2xl overflow-hidden border border-slate-700 bg-slate-900 shadow-2xl relative aspect-[4/3] group">
           <img 
             src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80" 
-            alt="Hardened P20/H13 Tool Steel Injection Mold" 
+            alt="Hardened Steel Mold Tooling" 
             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
           />
           <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent"></div>
@@ -156,53 +154,53 @@
     </div>
   </section>
 
-  <!-- ==================== ENGINEERING & TOOLING PROCESS ==================== -->
-  <section id="engineering" class="py-20 bg-slate-100 text-slate-900 border-b border-slate-300">
+  <!-- ==================== ENGINEERING WORKFLOW ==================== -->
+  <section id="workflow" class="py-20 bg-[#0A1426] text-white border-b border-slate-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-3xl mx-auto mb-16">
-        <span class="inline-block px-3 py-1 rounded-full bg-blue-100 text-[#0066CC] text-xs font-extrabold uppercase tracking-widest mb-2" data-en="Engineering &amp; Production Workflow" data-es="Flujo de Ingeniería y Producción">
-          Engineering &amp; Production Workflow
+        <span class="inline-block px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400 text-xs font-mono-tech font-bold uppercase tracking-widest mb-2" data-en="Engineering Protocol" data-es="Protocolo de Ingeniería">
+          Engineering Protocol
         </span>
-        <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-1" data-en="From CAD Model to Certified Parts" data-es="Del Modelo CAD a Piezas Certificadas">From CAD Model to Certified Parts</h2>
-        <p class="text-sm text-slate-600 mt-3 leading-relaxed" data-en="Structured manufacturing management designed for design engineers, procurement specialists, and product founders alike." data-es="Gestión estructurada de manufactura pensada para ingenieros de diseño, especialistas en compras y fundadores de producto.">
-          Structured manufacturing management designed for design engineers, procurement specialists, and product founders alike.
+        <h2 class="text-3xl sm:text-4xl font-black text-white mt-1" data-en="From CAD Model to Certified Parts" data-es="Del Modelo CAD a Piezas Certificadas">From CAD Model to Certified Parts</h2>
+        <p class="text-sm text-slate-400 mt-3 leading-relaxed" data-en="Structured manufacturing management designed for design engineers, procurement specialists, and product founders." data-es="Gestión estructurada de manufactura para ingenieros de diseño, especialistas en compras y fundadores de producto.">
+          Structured manufacturing management designed for design engineers, procurement specialists, and product founders.
         </p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
         <!-- Step 1 -->
-        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300">
-          <div class="w-10 h-10 rounded-xl bg-blue-50 text-[#0066CC] font-mono-tech font-black flex items-center justify-center text-sm mb-4">01</div>
-          <h3 class="text-base font-bold text-slate-900" data-en="DFM &amp; Gate Analysis" data-es="Análisis DFM y Entrada">DFM &amp; Gate Analysis</h3>
-          <p class="text-xs text-slate-600 mt-2 leading-relaxed" data-en="Review of wall thickness uniformity, draft angles, rib-to-wall ratios, parting line placement, and weld line mitigation." data-es="Revisión de espesor uniforme de pared, ángulos de desmolde, costillas, líneas de partición y mitigación de líneas de unión.">
-            Review of wall thickness uniformity, draft angles, rib-to-wall ratios, parting line placement, and weld line mitigation.
+        <div class="bg-[#111E38] p-6 rounded-2xl border border-slate-800 shadow-lg hover:border-blue-500/40 transition duration-300">
+          <div class="w-10 h-10 rounded-xl bg-blue-500/20 text-blue-400 font-mono-tech font-black flex items-center justify-center text-sm mb-4">01</div>
+          <h3 class="text-base font-bold text-white" data-en="DFM &amp; Gate Analysis" data-es="Análisis DFM y Entrada">DFM &amp; Gate Analysis</h3>
+          <p class="text-xs text-slate-400 mt-2 leading-relaxed" data-en="Review of wall thickness uniformity, draft angles, parting lines, and weld line mitigation." data-es="Revisión de espesor uniforme de pared, ángulos de desmolde, líneas de partición y uniones.">
+            Review of wall thickness uniformity, draft angles, parting lines, and weld line mitigation.
           </p>
         </div>
 
         <!-- Step 2 -->
-        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300">
-          <div class="w-10 h-10 rounded-xl bg-blue-50 text-[#0066CC] font-mono-tech font-black flex items-center justify-center text-sm mb-4">02</div>
-          <h3 class="text-base font-bold text-slate-900" data-en="Mold Build (100% Client Owned)" data-es="Fabricación de Molde (100% Tuyo)">Mold Build (100% Client Owned)</h3>
-          <p class="text-xs text-slate-600 mt-2 leading-relaxed" data-en="P20, NAK80, or H13 hardened tool steel cavities with hot or cold runner systems tailored to cycle time and production budget." data-es="Cavidades en acero P20, NAK80 o H13 con colada fría o caliente según tus metas de ciclo y presupuesto.">
-            P20, NAK80, or H13 hardened tool steel cavities with hot or cold runner systems tailored to cycle time and production budget.
+        <div class="bg-[#111E38] p-6 rounded-2xl border border-slate-800 shadow-lg hover:border-blue-500/40 transition duration-300">
+          <div class="w-10 h-10 rounded-xl bg-blue-500/20 text-blue-400 font-mono-tech font-black flex items-center justify-center text-sm mb-4">02</div>
+          <h3 class="text-base font-bold text-white" data-en="Tool Build (100% Client Owned)" data-es="Fabricación de Molde (100% Tuyo)">Tool Build (100% Client Owned)</h3>
+          <p class="text-xs text-slate-400 mt-2 leading-relaxed" data-en="P20, NAK80, or H13 hardened tool steel cavities with hot or cold runner systems tailored to your target cycle time." data-es="Cavidades en acero P20, NAK80 o H13 con colada fría o caliente según tus metas de ciclo y presupuesto.">
+            P20, NAK80, or H13 hardened tool steel cavities with hot or cold runner systems tailored to your target cycle time.
           </p>
         </div>
 
         <!-- Step 3 -->
-        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300">
-          <div class="w-10 h-10 rounded-xl bg-blue-50 text-[#0066CC] font-mono-tech font-black flex items-center justify-center text-sm mb-4">03</div>
-          <h3 class="text-base font-bold text-slate-900" data-en="T1 Sampling &amp; CMM Sign-off" data-es="Muestras T1 y Aprobación CMM">T1 Sampling &amp; CMM Sign-off</h3>
-          <p class="text-xs text-slate-600 mt-2 leading-relaxed" data-en="First-article pilot samples shipped straight to your desk with dimensional inspection reports and weight verifications." data-es="Primeras muestras físicas T1 enviadas directo a tu escritorio con reportes de inspección dimensional y peso.">
-            First-article pilot samples shipped straight to your desk with dimensional inspection reports and weight verifications.
+        <div class="bg-[#111E38] p-6 rounded-2xl border border-slate-800 shadow-lg hover:border-blue-500/40 transition duration-300">
+          <div class="w-10 h-10 rounded-xl bg-blue-500/20 text-blue-400 font-mono-tech font-black flex items-center justify-center text-sm mb-4">03</div>
+          <h3 class="text-base font-bold text-white" data-en="T1 Sampling &amp; Verification" data-es="Muestras T1 y Verificación">T1 Sampling &amp; Verification</h3>
+          <p class="text-xs text-slate-400 mt-2 leading-relaxed" data-en="First-article pilot samples shipped directly to your desk with dimensional inspection reports." data-es="Primeras muestras físicas T1 enviadas directo a tu escritorio con reportes de inspección dimensional y peso.">
+            First-article pilot samples shipped directly to your desk with dimensional inspection reports.
           </p>
         </div>
 
         <!-- Step 4 -->
-        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300">
-          <div class="w-10 h-10 rounded-xl bg-blue-50 text-[#0066CC] font-mono-tech font-black flex items-center justify-center text-sm mb-4">04</div>
-          <h3 class="text-base font-bold text-slate-900" data-en="Production &amp; Bonded Transit" data-es="Producción y Flete Sellado">Production &amp; Bonded Transit</h3>
-          <p class="text-xs text-slate-600 mt-2 leading-relaxed" data-en="Closed-loop process parameter control, lot packaging, and cross-border freight into the continental U.S. without customs friction." data-es="Control de parámetros en circuito cerrado, empaque por lote y flete directo a Norteamérica sin trabas aduanales.">
-            Closed-loop process parameter control, lot packaging, and cross-border freight into the continental U.S. without customs friction.
+        <div class="bg-[#111E38] p-6 rounded-2xl border border-slate-800 shadow-lg hover:border-blue-500/40 transition duration-300">
+          <div class="w-10 h-10 rounded-xl bg-blue-500/20 text-blue-400 font-mono-tech font-black flex items-center justify-center text-sm mb-4">04</div>
+          <h3 class="text-base font-bold text-white" data-en="Production &amp; Bonded Transit" data-es="Producción y Flete Directo">Production &amp; Bonded Transit</h3>
+          <p class="text-xs text-slate-400 mt-2 leading-relaxed" data-en="Closed-loop process parameter control, lot packaging, and cross-border freight into the continental U.S." data-es="Control de parámetros en circuito cerrado, empaque por lote y flete directo a Norteamérica sin trabas aduanales.">
+            Closed-loop process parameter control, lot packaging, and cross-border freight into the continental U.S.
           </p>
         </div>
       </div>
@@ -210,17 +208,15 @@
   </section>
 
   <!-- ==================== WHY MEXICO ==================== -->
-  <section id="why-mexico" class="py-20 bg-[#0B1528] border-b border-slate-800 text-white">
+  <section id="why-mexico" class="py-20 bg-[#0F1C33] border-b border-slate-800 text-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="mb-12">
         <p class="text-xs font-bold uppercase tracking-widest text-blue-400" data-en="Nearshoring Advantage" data-es="Ventaja de Nearshoring">Nearshoring Advantage</p>
         <h2 class="text-3xl sm:text-4xl font-black text-white mt-1" data-en="Why Mexico Beats Traditional Overseas Sourcing" data-es="Por Qué México Supera la Manufactura en Asia">Why Mexico Beats Traditional Overseas Sourcing</h2>
-        <p class="text-sm text-slate-400 mt-2" data-en="Eliminate port congestion, volatile ocean container rates, and 12-hour timezone delays." data-es="Elimina saturación en puertos, tarifas marítimas volátiles y demoras por husos horarios lejanos.">Eliminate port congestion, volatile ocean container rates, and 12-hour timezone delays.</p>
+        <p class="text-sm text-slate-400 mt-2" data-en="Eliminate ocean port congestion, volatile container freight rates, and 12-hour timezone delays." data-es="Elimina saturación en puertos marítimos, tarifas volátiles de contenedores y demoras por husos horarios lejanos.">Eliminate ocean port congestion, volatile container freight rates, and 12-hour timezone delays.</p>
       </div>
 
-      <!-- Ledger Layout -->
-      <div class="border border-slate-800 rounded-2xl overflow-hidden bg-[#111C33] shadow-xl">
-        
+      <div class="border border-slate-800 rounded-2xl overflow-hidden bg-[#111E38] shadow-xl">
         <!-- Row 1 -->
         <div class="grid grid-cols-1 md:grid-cols-12 p-6 border-b border-slate-800 items-center gap-4">
           <div class="md:col-span-3">
@@ -230,7 +226,7 @@
             <span class="font-bold text-slate-300 block text-xs uppercase tracking-wider mb-1" data-en="Traditional Overseas" data-es="Tradicional en Asia">Traditional Overseas</span>
             <span data-en="30 to 60 days on open water, port bottlenecks, and demurrage risks." data-es="30 a 60 días en altamar, cuellos de botella en puertos y riesgos de almacenaje.">30 to 60 days on open water, port bottlenecks, and demurrage risks.</span>
           </div>
-          <div class="md:col-span-5 text-sm text-slate-200 bg-[#162544] p-4 rounded-xl border border-blue-500/20">
+          <div class="md:col-span-5 text-sm text-slate-200 bg-[#172748] p-4 rounded-xl border border-blue-500/20">
             <span class="font-bold text-blue-400 block text-xs uppercase tracking-wider mb-1" data-en="NM&amp;M in Mexico" data-es="NM&amp;M en México">NM&amp;M in Mexico</span>
             <span data-en="<strong>Days by direct dry-van truck.</strong> Seamless highway transit across the Laredo/Texas commercial crossings." data-es="<strong>Días por transporte terrestre.</strong> Tránsito carretero directo a través de los cruces comerciales de Laredo y Texas."><strong>Days by direct dry-van truck.</strong> Seamless highway transit across the Laredo/Texas commercial crossings.</span>
           </div>
@@ -245,7 +241,7 @@
             <span class="font-bold text-slate-300 block text-xs uppercase tracking-wider mb-1" data-en="Traditional Overseas" data-es="Tradicional en Asia">Traditional Overseas</span>
             <span data-en="Unpredictable section tariffs, punitive import duties, and customs audits." data-es="Aranceles punitivos imprevistos, impuestos de importación y auditorías aduanales.">Unpredictable section tariffs, punitive import duties, and customs audits.</span>
           </div>
-          <div class="md:col-span-5 text-sm text-slate-200 bg-[#162544] p-4 rounded-xl border border-blue-500/20">
+          <div class="md:col-span-5 text-sm text-slate-200 bg-[#172748] p-4 rounded-xl border border-blue-500/20">
             <span class="font-bold text-blue-400 block text-xs uppercase tracking-wider mb-1" data-en="NM&amp;M in Mexico" data-es="NM&amp;M en México">NM&amp;M in Mexico</span>
             <span data-en="<strong>USMCA 0% Tariff Certification.</strong> Duty-free North American trade compliance with predictable landed invoicing." data-es="<strong>Certificación Arancel Cero T-MEC.</strong> Comercio libre de aranceles en Norteamérica y costos por pieza estables."><strong>USMCA 0% Tariff Certification.</strong> Duty-free North American trade compliance with predictable landed invoicing.</span>
           </div>
@@ -260,18 +256,17 @@
             <span class="font-bold text-slate-300 block text-xs uppercase tracking-wider mb-1" data-en="Traditional Overseas" data-es="Tradicional en Asia">Traditional Overseas</span>
             <span data-en="12-hour timezone delays, communication gaps, and difficult onsite tool audits." data-es="Diferencias de 12 horas de huso horario, barreras de idioma y difícil auditoría de moldes.">12-hour timezone delays, communication gaps, and difficult onsite tool audits.</span>
           </div>
-          <div class="md:col-span-5 text-sm text-slate-200 bg-[#162544] p-4 rounded-xl border border-blue-500/20">
+          <div class="md:col-span-5 text-sm text-slate-200 bg-[#172748] p-4 rounded-xl border border-blue-500/20">
             <span class="font-bold text-blue-400 block text-xs uppercase tracking-wider mb-1" data-en="NM&amp;M in Mexico" data-es="NM&amp;M en México">NM&amp;M in Mexico</span>
             <span data-en="<strong>Same Central Time Zone.</strong> Native bilingual engineering leadership, real-time video mold trials, and direct plant access." data-es="<strong>Mismo Huso Horario Central.</strong> Liderazgo de ingeniería bilingüe, pruebas de molde por videollamada y acceso directo a planta."><strong>Same Central Time Zone.</strong> Native bilingual engineering leadership, real-time video mold trials, and direct plant access.</span>
           </div>
         </div>
-
       </div>
     </div>
   </section>
 
-  <!-- ==================== PLANT CAPACITY & PRESS SPECIFICATIONS ==================== -->
-  <section id="specs" class="py-20 bg-[#070E1C] text-white border-b border-slate-800">
+  <!-- ==================== CAPACITY & FLEET SPECS ==================== -->
+  <section id="specs" class="py-20 bg-[#0A1426] text-white border-b border-slate-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="mb-8">
         <p class="text-xs font-bold uppercase tracking-widest text-blue-400" data-en="Plant Architecture &amp; Tonnage" data-es="Arquitectura de Planta y Tonelaje">Plant Architecture &amp; Tonnage</p>
@@ -279,8 +274,8 @@
         <p class="text-sm text-slate-300 mt-2" data-en="Active injection presses ranging from 120 Tons to 650 Tons plus continuous sheet extrusion." data-es="Prensas activas de inyección de 120 a 650 toneladas más extrusión continua de lámina.">Active injection presses ranging from 120 Tons to 650 Tons plus continuous sheet extrusion.</p>
       </div>
 
-      <!-- Capacity Banner -->
-      <div class="p-4 bg-[#111C33] border border-blue-500/30 rounded-xl mb-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+      <!-- Capacity Highlight Banner -->
+      <div class="p-4 bg-[#111E38] border border-blue-500/30 rounded-xl mb-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
         <div>
           <p class="text-xs text-blue-400 font-bold uppercase tracking-wider" data-en="Fleet Clamping Force Range" data-es="Rango de Fuerza de Cierre">Fleet Clamping Force Range</p>
           <p class="text-sm text-slate-200 mt-0.5" data-en="Hydraulic and toggle presses spanning <strong>120 Tons up to 650 Tons</strong>" data-es="Prensas hidráulicas y de rodillera que abarcan de <strong>120 a 650 Toneladas</strong>">Hydraulic and toggle presses spanning <strong>120 Tons up to 650 Tons</strong></p>
@@ -291,8 +286,7 @@
       </div>
 
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-        
-        <!-- Clean, Compact Plant Photo Container -->
+        <!-- Plant Photo (16:9 Frame) -->
         <div class="lg:col-span-5 rounded-2xl overflow-hidden border border-slate-700 bg-slate-900 shadow-2xl">
           <div class="h-64 sm:h-72 w-full overflow-hidden bg-slate-950 relative">
             <img 
@@ -311,7 +305,7 @@
         </div>
 
         <!-- Technical Machine Fleet Table -->
-        <div class="lg:col-span-7 bg-[#0E1E36] rounded-2xl border border-slate-800 overflow-hidden shadow-2xl">
+        <div class="lg:col-span-7 bg-[#111E38] rounded-2xl border border-slate-800 overflow-hidden shadow-2xl">
           <div class="p-5 border-b border-slate-800 bg-black/20 flex justify-between items-center">
             <div>
               <h3 class="text-base font-bold text-white" data-en="Press Line Breakdown" data-es="Detalle de Líneas de Inyección">Press Line Breakdown</h3>
@@ -368,13 +362,12 @@
             </table>
           </div>
         </div>
-
       </div>
     </div>
   </section>
 
   <!-- ==================== MATERIALS & TECHNICAL RESINS ==================== -->
-  <section id="materials" class="py-20 bg-[#0B1528] text-white border-b border-slate-800">
+  <section id="materials" class="py-20 bg-[#0F1C33] text-white border-b border-slate-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="mb-12">
         <p class="text-xs font-bold uppercase tracking-widest text-blue-400" data-en="Material Science" data-es="Ciencia de Materiales">Material Science</p>
@@ -383,7 +376,7 @@
       </div>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        <div class="p-6 rounded-2xl bg-[#111C33] border border-slate-800 shadow-md">
+        <div class="p-6 rounded-2xl bg-[#111E38] border border-slate-800 shadow-md">
           <span class="text-xs font-mono-tech text-blue-400 font-bold" data-en="Commodity Resins" data-es="Resinas Comunes">Commodity Resins</span>
           <h4 class="text-lg font-bold text-white mt-1">PP &bull; HDPE &bull; LDPE</h4>
           <p class="text-xs text-slate-400 mt-2 leading-relaxed" data-en="High-flow polypropylene and polyethylene for food packaging, chemical-resistant containers, and agricultural fittings." data-es="Polipropileno y polietileno de alta fluidez para empaque de alimentos, envases resistentes y accesorios agrícolas.">
@@ -391,7 +384,7 @@
           </p>
         </div>
 
-        <div class="p-6 rounded-2xl bg-[#111C33] border border-slate-800 shadow-md">
+        <div class="p-6 rounded-2xl bg-[#111E38] border border-slate-800 shadow-md">
           <span class="text-xs font-mono-tech text-blue-400 font-bold" data-en="Engineering Thermoplastics" data-es="Termoplásticos de Ingeniería">Engineering Thermoplastics</span>
           <h4 class="text-lg font-bold text-white mt-1">ABS &bull; PC &bull; PC/ABS</h4>
           <p class="text-xs text-slate-400 mt-2 leading-relaxed" data-en="High impact resistance, structural rigidity, and cosmetic surface finishes for electronics and hardware housings." data-es="Alta resistencia al impacto, rigidez estructural y acabados estéticos para electrónica y carcasas.">
@@ -399,7 +392,7 @@
           </p>
         </div>
 
-        <div class="p-6 rounded-2xl bg-[#111C33] border border-slate-800 shadow-md">
+        <div class="p-6 rounded-2xl bg-[#111E38] border border-slate-800 shadow-md">
           <span class="text-xs font-mono-tech text-blue-400 font-bold" data-en="Structural Polyamides" data-es="Poliamidas Estructurales">Structural Polyamides</span>
           <h4 class="text-lg font-bold text-white mt-1">Nylon (PA6 / PA66)</h4>
           <p class="text-xs text-slate-400 mt-2 leading-relaxed" data-en="Unfilled and glass-filled blends for mechanical wear resistance, high thermal deflection, and gear components." data-es="Formulaciones naturales o con fibra de vidrio para resistencia al desgaste mecánico, alta deflexión térmica y engranes.">
@@ -407,7 +400,7 @@
           </p>
         </div>
 
-        <div class="p-6 rounded-2xl bg-[#111C33] border border-slate-800 shadow-md">
+        <div class="p-6 rounded-2xl bg-[#111E38] border border-slate-800 shadow-md">
           <span class="text-xs font-mono-tech text-blue-400 font-bold" data-en="Additives &amp; Masterbatches" data-es="Aditivos y Masterbatches">Additives &amp; Masterbatches</span>
           <h4 class="text-lg font-bold text-white mt-1">UV &bull; Anti-Stat &bull; Colors</h4>
           <p class="text-xs text-slate-400 mt-2 leading-relaxed" data-en="Custom color matching (Pantone/RAL), UV weathering stabilizers for outdoor exposure, and flame retardants (UL94)." data-es="Igualación de color a la medida (Pantone/RAL), estabilizadores UV para intemperie y retardantes de flama (UL94).">
@@ -419,49 +412,47 @@
   </section>
 
   <!-- ==================== APPLICATIONS ==================== -->
-  <section id="products" class="py-20 bg-slate-100 text-slate-900 border-b border-slate-300">
+  <section id="products" class="py-20 bg-[#0A1426] text-white border-b border-slate-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="mb-12">
-        <span class="inline-block px-3 py-1 rounded-full bg-blue-100 text-[#0066CC] text-xs font-extrabold uppercase tracking-widest mb-2" data-en="Production Versatility" data-es="Versatilidad de Producción">
+        <span class="inline-block px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400 text-xs font-mono-tech font-bold uppercase tracking-widest mb-2" data-en="Production Versatility" data-es="Versatilidad de Producción">
           Production Versatility
         </span>
-        <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-1" data-en="Engineered Parts Across Industries" data-es="Piezas Técnicas por Industria">Engineered Parts Across Industries</h2>
+        <h2 class="text-3xl sm:text-4xl font-black text-white mt-1" data-en="Engineered Parts Across Industries" data-es="Piezas Técnicas por Industria">Engineered Parts Across Industries</h2>
       </div>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        
-        <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300">
+        <div class="p-6 rounded-2xl bg-[#111E38] border border-slate-800 shadow-lg hover:border-slate-700 transition">
           <div class="text-3xl mb-3">🌱</div>
-          <h4 class="font-bold text-slate-900 text-base" data-en="Farming &amp; Agriculture" data-es="Campo y Agricultura">Farming &amp; Agriculture</h4>
-          <p class="text-xs text-slate-600 mt-2 leading-relaxed" data-en="Drip irrigation connectors, greenhouse watering fittings, nursery pots, and rugged field crates." data-es="Conectores de riego por goteo, fitting para invernaderos, macetas de vivero y cajas agrícolas de cosecha.">
+          <h4 class="font-bold text-white text-base" data-en="Farming &amp; Agriculture" data-es="Campo y Agricultura">Farming &amp; Agriculture</h4>
+          <p class="text-xs text-slate-400 mt-2 leading-relaxed" data-en="Drip irrigation connectors, greenhouse watering fittings, nursery pots, and rugged field crates." data-es="Conectores de riego por goteo, fitting para invernaderos, macetas de vivero y cajas agrícolas de cosecha.">
             Drip irrigation connectors, greenhouse watering fittings, nursery pots, and rugged field crates.
           </p>
         </div>
 
-        <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300">
+        <div class="p-6 rounded-2xl bg-[#111E38] border border-slate-800 shadow-lg hover:border-slate-700 transition">
           <div class="text-3xl mb-3">☕</div>
-          <h4 class="font-bold text-slate-900 text-base" data-en="Food &amp; Beverage" data-es="Alimentos y Bebidas">Food &amp; Beverage</h4>
-          <p class="text-xs text-slate-600 mt-2 leading-relaxed" data-en="Sanitary food-contact containers, takeout closures, beverage stirrers, and tamper-evident packaging." data-es="Contenedores grado alimenticio, tapas para bebidas, agitadores y envases con sellos de inviolabilidad.">
+          <h4 class="font-bold text-white text-base" data-en="Food &amp; Beverage" data-es="Alimentos y Bebidas">Food &amp; Beverage</h4>
+          <p class="text-xs text-slate-400 mt-2 leading-relaxed" data-en="Sanitary food-contact containers, takeout closures, beverage stirrers, and tamper-evident packaging." data-es="Contenedores grado alimenticio, tapas para bebidas, agitadores y envases con sellos de inviolabilidad.">
             Sanitary food-contact containers, takeout closures, beverage stirrers, and tamper-evident packaging.
           </p>
         </div>
 
-        <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300">
+        <div class="p-6 rounded-2xl bg-[#111E38] border border-slate-800 shadow-lg hover:border-slate-700 transition">
           <div class="text-3xl mb-3">💊</div>
-          <h4 class="font-bold text-slate-900 text-base" data-en="Health &amp; Pharma" data-es="Salud y Farmacéutica">Health &amp; Pharma</h4>
-          <p class="text-xs text-slate-600 mt-2 leading-relaxed" data-en="Sanitary diagnostic vials, safety pill closures, laboratory trays, and cleanroom-molded disposable components." data-es="Frascos de diagnóstico, tapas con seguro infantil, charolas para laboratorio y componentes desechables.">
+          <h4 class="font-bold text-white text-base" data-en="Health &amp; Pharma" data-es="Salud y Farmacéutica">Health &amp; Pharma</h4>
+          <p class="text-xs text-slate-400 mt-2 leading-relaxed" data-en="Sanitary diagnostic vials, safety pill closures, laboratory trays, and cleanroom-molded disposable components." data-es="Frascos de diagnóstico, tapas con seguro infantil, charolas para laboratorio y componentes desechables.">
             Sanitary diagnostic vials, safety pill closures, laboratory trays, and cleanroom-molded disposable components.
           </p>
         </div>
 
-        <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300">
+        <div class="p-6 rounded-2xl bg-[#111E38] border border-slate-800 shadow-lg hover:border-slate-700 transition">
           <div class="text-3xl mb-3">🔧</div>
-          <h4 class="font-bold text-slate-900 text-base" data-en="Hardware &amp; Industrial" data-es="Ferretería e Industrial">Hardware &amp; Industrial</h4>
-          <p class="text-xs text-slate-600 mt-2 leading-relaxed" data-en="Structural mounting brackets, tool handles, protective electrical junction boxes, and equipment housings." data-es="Soportes estructurales, mangos para herramientas, cajas eléctricas de conexión y carcasas de equipos.">
+          <h4 class="font-bold text-white text-base" data-en="Hardware &amp; Industrial" data-es="Ferretería e Industrial">Hardware &amp; Industrial</h4>
+          <p class="text-xs text-slate-400 mt-2 leading-relaxed" data-en="Structural mounting brackets, tool handles, protective electrical junction boxes, and equipment housings." data-es="Soportes estructurales, mangos para herramientas, cajas eléctricas de conexión y carcasas de equipos.">
             Structural mounting brackets, tool handles, protective electrical junction boxes, and equipment housings.
           </p>
         </div>
-
       </div>
     </div>
   </section>
@@ -485,7 +476,6 @@
           </p>
 
           <div class="mt-8 space-y-4">
-            
             <!-- WhatsApp Direct Card -->
             <a id="cardWhatsappBtn" href="https://wa.me/523322555211?text=Hello%20William,%20I'm%20reaching%20out%20with%20a%20plastic%20injection%20molding%20project" 
                target="_blank" rel="noopener noreferrer" 
@@ -514,12 +504,11 @@
                 <p class="text-[11px] text-slate-400" data-en="Guaranteed 24-hour turnaround" data-es="Respuesta garantizada en 24 hrs">Guaranteed 24-hour turnaround</p>
               </div>
             </a>
-
           </div>
         </div>
 
         <!-- Right: Inquiry Form -->
-        <div class="lg:col-span-7 bg-[#111C33] text-slate-100 p-8 sm:p-10 rounded-2xl border border-slate-800 shadow-2xl">
+        <div class="lg:col-span-7 bg-[#111E38] text-slate-100 p-8 sm:p-10 rounded-2xl border border-slate-800 shadow-2xl">
           <h3 class="text-xl font-extrabold text-white" data-en="Project Scope &amp; RFQ Details" data-es="Alcance del Proyecto y Cotización">Project Scope &amp; RFQ Details</h3>
           <p class="text-xs text-slate-400 mt-1" data-en="Provide your part details below to initialize a DFM check and tooling estimate." data-es="Ingresa los detalles de tu pieza para iniciar la revisión DFM y estimación de molde.">Provide your part details below to initialize a DFM check and tooling estimate.</p>
 
@@ -590,16 +579,14 @@
     </div>
   </footer>
 
-  <!-- ==================== JAVASCRIPT: TRANSLATION & FORM LOGIC ==================== -->
+  <!-- ==================== JS TRANSLATOR & FORM DISPATCHER ==================== -->
   <script>
-    // Current Active Language
     let currentLang = localStorage.getItem('nmm_lang') || 'en';
 
     function setLanguage(lang) {
       currentLang = lang;
       localStorage.setItem('nmm_lang', lang);
 
-      // Toggle Header Indicators
       const enIndicator = document.getElementById('langEnIndicator');
       const esIndicator = document.getElementById('langEsIndicator');
       if (lang === 'es') {
@@ -616,35 +603,28 @@
         document.documentElement.lang = 'en';
       }
 
-      // Update All Text Elements with data-en and data-es
+      // Update text in elements with data-en / data-es
       document.querySelectorAll('[data-en]').forEach(el => {
         const text = el.getAttribute(`data-${lang}`);
-        if (text) {
-          el.innerHTML = text;
-        }
+        if (text) el.innerHTML = text;
       });
 
-      // Update Input Placeholders
+      // Update placeholders
       document.querySelectorAll('[data-en-placeholder]').forEach(input => {
         const placeholderText = input.getAttribute(`data-${lang}-placeholder`);
-        if (placeholderText) {
-          input.placeholder = placeholderText;
-        }
+        if (placeholderText) input.placeholder = placeholderText;
       });
 
-      // Update Select Options
+      // Update dropdown options
       document.querySelectorAll('#projectStage option').forEach(opt => {
         const optionText = opt.getAttribute(`data-${lang}`);
-        if (optionText) {
-          opt.textContent = optionText;
-        }
+        if (optionText) opt.textContent = optionText;
       });
 
-      // Update WhatsApp Deep Links Message Language
+      // Update WhatsApp links
       const headerWa = document.getElementById('headerWhatsappBtn');
       const heroWa = document.getElementById('heroWhatsappBtn');
       const cardWa = document.getElementById('cardWhatsappBtn');
-
       if (lang === 'es') {
         const esMsg = encodeURIComponent("Hola William, me comunico sobre un proyecto de inyección de plástico con NM&M.");
         headerWa.href = `https://wa.me/523322555211?text=${esMsg}`;
@@ -658,27 +638,23 @@
       }
     }
 
-    // Toggle Button Event Listener
     document.getElementById('langToggleBtn').addEventListener('click', function() {
       setLanguage(currentLang === 'en' ? 'es' : 'en');
     });
 
-    // Initialize Default Language
     setLanguage(currentLang);
 
-    // Form Handler
+    // Form submission handler
     document.getElementById('projectForm').addEventListener('submit', function(e) {
       e.preventDefault();
-      
       const name = document.getElementById('senderName').value;
-      const company = document.getElementById('senderCompany').value || (currentLang === 'es' ? 'N/A' : 'N/A');
+      const company = document.getElementById('senderCompany').value || 'N/A';
       const email = document.getElementById('senderEmail').value;
       const resin = document.getElementById('resinType').value || (currentLang === 'es' ? 'No especificado' : 'Unspecified');
       const volume = document.getElementById('estVolume').value || (currentLang === 'es' ? 'No especificado' : 'Not specified');
       const stage = document.getElementById('projectStage').value;
 
       let subject, body;
-
       if (currentLang === 'es') {
         subject = encodeURIComponent(`Cotización de Moldeo y Piezas - ${company} (${name})`);
         body = encodeURIComponent(
