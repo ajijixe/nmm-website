@@ -1,36 +1,18 @@
-<!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NM&M | Niche Market & Manufacturing — Friendly Plastics Production</title>
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Google Fonts: Plus Jakarta Sans for friendly, modern readability -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    body { font-family: 'Plus Jakarta Sans', sans-serif; }
-  </style>
-</head>
-<body class="bg-slate-50 text-slate-800 antialiased selection:bg-[#0066CC] selection:text-white">
-
-  <!-- ==================== HEADER / NAV ==================== -->
+<!-- ==================== BALANCED HEADER ==================== -->
   <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-24 flex items-center justify-between">
+    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
       
-      <!-- Brand & Distinct Vector Ring Logo -->
-      <a href="#" class="flex items-center gap-4 group focus:outline-none" aria-label="NM&M Home">
-        <svg class="shrink-0 transition-transform group-hover:scale-105 duration-200" style="height: 52px; width: 52px;" viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg">
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-3">
+        <svg class="h-10 w-10 shrink-0" viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <linearGradient id="solidTeal" x1="0%" y1="0%" x2="100%" y2="100%">
               <stop offset="0%" stop-color="#00A88F" />
               <stop offset="100%" stop-color="#00806A" />
             </linearGradient>
             <linearGradient id="slateMetal" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#64748B" />
-              <stop offset="100%" stop-color="#334155" />
+              <stop offset="0%" stop-color="#5A6B7C" />
+              <stop offset="100%" stop-color="#404E5C" />
             </linearGradient>
           </defs>
           <g transform="translate(160, 160)">
@@ -45,71 +27,68 @@
           </g>
         </svg>
         <div class="flex flex-col">
-          <span class="text-2xl sm:text-3xl font-extrabold tracking-tight text-[#0066CC] leading-none">NM&amp;M</span>
-          <span class="text-[11px] font-bold tracking-[0.2em] text-slate-500 uppercase mt-1">Niche Market &amp; Manufacturing</span>
+          <span class="text-xl font-bold tracking-tight text-[#0066CC] leading-none">NM&amp;M</span>
+          <span class="text-[10px] font-semibold tracking-wider text-slate-500 uppercase mt-0.5">Niche Market &amp; Manufacturing</span>
         </div>
       </a>
 
-      <!-- Navigation -->
-      <nav class="hidden md:flex items-center gap-7 text-sm font-semibold text-slate-600">
+      <!-- Clean Menu -->
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-600">
         <a href="#how-it-works" class="hover:text-[#0066CC] transition">How It Works</a>
-        <a href="#advantages" class="hover:text-[#0066CC] transition">Why Guadalajara</a>
-        <a href="#specs" class="hover:text-[#0066CC] transition">Our Machines</a>
-        <a href="#products" class="hover:text-[#0066CC] transition">What We Make</a>
-        <a href="#contact" class="hover:text-[#0066CC] transition">Chat With Us</a>
+        <a href="#specs" class="hover:text-[#0066CC] transition">Capacity</a>
+        <a href="#products" class="hover:text-[#0066CC] transition">Products</a>
+        <a href="#contact" class="hover:text-[#0066CC] transition">Contact</a>
       </nav>
 
-      <!-- WhatsApp Instant Header Button -->
-      <div>
-        <a href="https://wa.me/523322555211?text=Hello%20William,%20I'm%20interested%20in%20making%20a%20plastic%20part%20with%20NM%26M" 
-           target="_blank" rel="noopener noreferrer" 
-           class="inline-flex items-center gap-2 px-4 py-2.5 rounded-full text-xs font-bold text-white bg-[#25D366] hover:bg-[#20ba5a] transition shadow-sm hover:shadow">
-          <span>WhatsApp William</span>
-        </a>
-      </div>
+      <!-- Action -->
+      <a href="https://wa.me/523322555211?text=Hello%20William,%20I'm%20interested%20in%20a%20plastics%20project" 
+         target="_blank" rel="noopener noreferrer" 
+         class="px-4 py-2 rounded-lg text-xs font-bold text-white bg-[#0066CC] hover:bg-blue-700 transition">
+        Ask for William
+      </a>
     </div>
   </header>
 
-  <!-- ==================== HERO SECTION ==================== -->
-  <section class="py-16 lg:py-24 bg-white border-b border-slate-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+  <!-- ==================== NATURAL READING-ORDER HERO ==================== -->
+  <section class="py-16 lg:py-20 bg-white border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
       
-      <!-- Text & Friendly Pitch -->
+      <!-- Readable Story on Left -->
       <div class="lg:col-span-7">
-        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-[#0066CC] text-xs font-bold uppercase tracking-wider mb-5">
-          <span>🇲🇽</span> Guadalajara, Mexico &bull; Friendly Nearshoring Partner
-        </div>
-        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.15]">
-          Have an idea for a plastic product?<br/>
-          <span class="text-[#0066CC]">We'll help you make it real.</span>
+        <span class="inline-block text-xs font-bold uppercase tracking-wider text-[#0066CC] mb-3">
+          Guadalajara, Mexico &bull; Custom Plastics Nearshoring
+        </span>
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
+          Start small.<br/>Build something exceptional.
         </h1>
-        <p class="mt-6 text-base sm:text-lg text-slate-600 leading-relaxed max-w-xl">
-          You don't need a degree in mechanical engineering or a million-dollar budget. Whether you have a sketch on a napkin, a 3D digital model, or an existing mold, our bilingual team walks you through every step.
+        <p class="mt-5 text-base sm:text-lg text-slate-600 leading-relaxed max-w-xl">
+          Whether you need an initial pilot run of 1,000 parts or full-scale monthly production, our bilingual team in Guadalajara handles mold tooling, testing, and direct delivery straight to your door.
         </p>
+        
         <div class="mt-8 flex flex-wrap items-center gap-4">
-          <a href="#contact" class="px-7 py-3.5 rounded-xl text-sm font-bold text-white bg-[#0066CC] hover:bg-blue-700 transition shadow-md shadow-blue-500/20">
-            Tell Us What You Want to Make &rarr;
+          <a href="#contact" class="px-6 py-3 rounded-xl text-sm font-bold text-white bg-[#0066CC] hover:bg-blue-700 transition shadow-sm">
+            Discuss Your Project &rarr;
           </a>
-          <a href="https://wa.me/523322555211?text=Hello%20William,%20I%20have%20an%20idea%20for%20a%20plastic%20product" 
+          <a href="https://wa.me/523322555211?text=Hello%20William,%20I%20have%20a%20question%20about%20plastic%20manufacturing" 
              target="_blank" rel="noopener noreferrer"
-             class="px-6 py-3.5 rounded-xl text-sm font-bold text-slate-700 bg-slate-100 hover:bg-slate-200 transition border border-slate-200">
-            Chat with William on WhatsApp
+             class="px-5 py-3 rounded-xl text-sm font-bold text-slate-700 bg-slate-100 hover:bg-slate-200 transition">
+            Chat on WhatsApp
           </a>
         </div>
       </div>
 
-      <!-- Hero Visual -->
+      <!-- Balanced Photo on Right -->
       <div class="lg:col-span-5">
-        <div class="rounded-2xl overflow-hidden border border-slate-200 bg-slate-900 shadow-xl relative aspect-[4/3] group">
+        <div class="rounded-xl overflow-hidden border border-slate-200 bg-slate-900 shadow-lg relative aspect-[4/3]">
           <img 
             src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80" 
             alt="Steel Mold Tooling for Plastics" 
-            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+            class="w-full h-full object-cover" 
+            onerror="this.onerror=null; this.src='Machines.png';" 
           />
-          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
-          <div class="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-md p-4 rounded-xl border border-white/50 shadow-md">
-            <p class="text-xs font-bold text-slate-900">From Steel Molds to Finished Parts</p>
-            <p class="text-[11px] text-slate-600 mt-0.5">We make the molds, run the machines, and ship straight to your door.</p>
+          <div class="absolute bottom-3 left-3 right-3 bg-white/95 backdrop-blur-sm p-3 rounded-lg border border-white/60 shadow-sm text-xs">
+            <span class="font-bold text-slate-900 block">Precision Steel Molds &bull; Full Client Ownership</span>
+            <span class="text-[11px] text-slate-500">Tooling fabricated in Guadalajara with zero recurring license fees.</span>
           </div>
         </div>
       </div>
@@ -117,385 +96,24 @@
     </div>
   </section>
 
-  <!-- ==================== PLASTICS 101: HOW IT ACTUALLY WORKS ==================== -->
-  <section id="how-it-works" class="py-20 bg-slate-100 border-b border-slate-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center max-w-2xl mx-auto mb-16">
-        <p class="text-xs font-bold uppercase tracking-widest text-[#0066CC]">New to Manufacturing?</p>
-        <h2 class="text-3xl font-extrabold text-slate-900 mt-1">How Plastic Injection Molding Works</h2>
-        <p class="text-sm text-slate-600 mt-3">Think of it like a high-tech, ultra-precise waffle iron for durable plastic parts:</p>
+  <!-- ==================== STATS STRIP (MOVED BELOW HERO) ==================== -->
+  <section class="border-b border-slate-200 bg-slate-50">
+    <div class="max-w-6xl mx-auto px-6 py-8 grid grid-cols-2 md:grid-cols-4 gap-6 text-center md:text-left">
+      <div>
+        <p class="text-2xl font-extrabold text-slate-900">10+ Years</p>
+        <p class="text-xs text-slate-500 font-medium mt-0.5">Manufacturing Experience[cite: 10]</p>
       </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- Step 1 -->
-        <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm relative">
-          <div class="w-12 h-12 rounded-xl bg-blue-50 text-[#0066CC] font-extrabold flex items-center justify-center text-lg mb-5">1</div>
-          <h3 class="text-lg font-bold text-slate-900">We Build the Mold (The Tool)</h3>
-          <p class="text-sm text-slate-600 mt-3 leading-relaxed">
-            We carve your exact design out of heavy-duty hardened steel[cite: 3]. Once built, this mold is <strong>100% yours forever</strong>[cite: 3].
-          </p>
-        </div>
-
-        <!-- Step 2 -->
-        <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm relative">
-          <div class="w-12 h-12 rounded-xl bg-blue-50 text-[#0066CC] font-extrabold flex items-center justify-center text-lg mb-5">2</div>
-          <h3 class="text-lg font-bold text-slate-900">The Machine Does Its Magic</h3>
-          <p class="text-sm text-slate-600 mt-3 leading-relaxed">
-            Tiny plastic pellets are melted down, injected into the mold under hundreds of tons of pressure, cooled, and popped out in seconds[cite: 3, 4].
-          </p>
-        </div>
-
-        <!-- Step 3 -->
-        <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm relative">
-          <div class="w-12 h-12 rounded-xl bg-blue-50 text-[#0066CC] font-extrabold flex items-center justify-center text-lg mb-5">3</div>
-          <h3 class="text-lg font-bold text-slate-900">Direct Delivery to Your Door</h3>
-          <p class="text-sm text-slate-600 mt-3 leading-relaxed">
-            We box, label, inspect every piece, and truck them straight from Guadalajara into the United States or Canada without customs headaches[cite: 3].
-          </p>
-        </div>
+      <div>
+        <p class="text-2xl font-extrabold text-slate-900">Up to 650T</p>
+        <p class="text-xs text-slate-500 font-medium mt-0.5">Clamping Force Range[cite: 10]</p>
+      </div>
+      <div>
+        <p class="text-2xl font-extrabold text-slate-900">100% Yours</p>
+        <p class="text-xs text-slate-500 font-medium mt-0.5">Mold Asset Ownership[cite: 10]</p>
+      </div>
+      <div>
+        <p class="text-2xl font-extrabold text-[#0066CC]">Door-to-Door</p>
+        <p class="text-xs text-slate-500 font-medium mt-0.5">Direct U.S. Truck Freight[cite: 10]</p>
       </div>
     </div>
   </section>
-
-  <!-- ==================== WHY NEARSHORING (COMPARISON) ==================== -->
-  <section id="advantages" class="py-20 bg-white border-b border-slate-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="mb-12">
-        <p class="text-xs font-bold uppercase tracking-widest text-[#0066CC]">Why Guadalajara Beats Overseas</p>
-        <h2 class="text-3xl font-extrabold text-slate-900 mt-1">Manufacturing Close to Home</h2>
-      </div>
-
-      <!-- Friendly Spec Comparison Ledger -->
-      <div class="border border-slate-200 rounded-2xl overflow-hidden bg-white shadow-sm">
-        
-        <div class="grid grid-cols-1 md:grid-cols-12 p-6 border-b border-slate-200 items-center gap-4">
-          <div class="md:col-span-3">
-            <span class="text-base font-bold text-slate-900">Shipping Speed</span>
-          </div>
-          <div class="md:col-span-4 text-sm text-slate-500">
-            <span class="font-bold text-slate-700 block text-xs uppercase tracking-wider mb-1">Shipping From Asia</span>
-            1 to 2 months floating across the Pacific ocean in cargo containers[cite: 3].
-          </div>
-          <div class="md:col-span-5 text-sm text-slate-800 bg-blue-50/70 p-4 rounded-xl border border-blue-100">
-            <span class="font-bold text-[#0066CC] block text-xs uppercase tracking-wider mb-1">NM&amp;M in Guadalajara</span>
-            <strong>Days by highway truck.</strong> Direct dry-van freight straight to your U.S. warehouse or fulfillment center[cite: 3].
-          </div>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-12 p-6 border-b border-slate-200 items-center gap-4">
-          <div class="md:col-span-3">
-            <span class="text-base font-bold text-slate-900">Communication</span>
-          </div>
-          <div class="md:col-span-4 text-sm text-slate-500">
-            <span class="font-bold text-slate-700 block text-xs uppercase tracking-wider mb-1">Shipping From Asia</span>
-            12-hour time difference, midnight emails, and tricky language barriers[cite: 3].
-          </div>
-          <div class="md:col-span-5 text-sm text-slate-800 bg-blue-50/70 p-4 rounded-xl border border-blue-100">
-            <span class="font-bold text-[#0066CC] block text-xs uppercase tracking-wider mb-1">NM&amp;M in Guadalajara</span>
-            <strong>Same Central Time Zone.</strong> Fluent English &amp; Spanish team available by phone, email, or WhatsApp[cite: 3].
-          </div>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-12 p-6 items-center gap-4">
-          <div class="md:col-span-3">
-            <span class="text-base font-bold text-slate-900">Taxes &amp; Tariffs</span>
-          </div>
-          <div class="md:col-span-4 text-sm text-slate-500">
-            <span class="font-bold text-slate-700 block text-xs uppercase tracking-wider mb-1">Shipping From Asia</span>
-            Unpredictable customs duties, import tariffs, and port fees[cite: 3].
-          </div>
-          <div class="md:col-span-5 text-sm text-slate-800 bg-blue-50/70 p-4 rounded-xl border border-blue-100">
-            <span class="font-bold text-[#0066CC] block text-xs uppercase tracking-wider mb-1">NM&amp;M in Guadalajara</span>
-            <strong>Duty-Free Under USMCA.</strong> Zero unexpected tariff surprises and predictable landed per-piece pricing[cite: 3].
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ==================== PRODUCTION FLOOR & CAPACITIES ==================== -->
-  <section id="specs" class="py-20 bg-[#0A1628] text-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="mb-10">
-        <p class="text-xs font-bold uppercase tracking-widest text-blue-400">Our Production Plant</p>
-        <h2 class="text-3xl font-extrabold text-white mt-1">Start Small. Keep Room to Grow.</h2>
-        <p class="text-sm text-slate-300 mt-2">Whether you need 500 prototype pieces or 200,000 monthly units, our fleet handles it[cite: 3, 4].</p>
-      </div>
-
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-        
-        <!-- Compact, Sharp Machine Photo Frame -->
-        <div class="lg:col-span-5 rounded-2xl overflow-hidden border border-slate-700 bg-slate-900 shadow-2xl">
-          <div class="h-64 sm:h-72 w-full overflow-hidden bg-slate-950 relative">
-            <img 
-              src="Machines.png" 
-              alt="Guadalajara Injection Molding Facility" 
-              class="w-full h-full object-cover object-center filter contrast-[1.05]" 
-              onerror="this.onerror=null; this.src='Machines.jpg';" 
-            />
-          </div>
-          <div class="px-5 py-3.5 bg-[#0B132B] border-t border-slate-800 flex justify-between items-center text-xs">
-            <span class="font-bold text-slate-200">Guadalajara Production Floor</span>
-            <span class="text-emerald-400 font-bold flex items-center gap-1.5">
-              <span class="w-2 h-2 rounded-full bg-emerald-400"></span> 10 Active Press Lines[cite: 3, 4]
-            </span>
-          </div>
-        </div>
-
-        <!-- Plain-English Machine Table -->
-        <div class="lg:col-span-7 bg-[#0E1E36] rounded-2xl border border-slate-800 overflow-hidden shadow-2xl">
-          <div class="p-5 border-b border-slate-800 bg-black/20 flex justify-between items-center">
-            <div>
-              <h3 class="text-base font-bold text-white">Machine Fleet &amp; Capabilities</h3>
-              <p class="text-xs text-slate-400">We match your product size to the ideal press tonnage</p>
-            </div>
-            <span class="text-xs px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 font-semibold border border-blue-500/30">10 Machines</span>
-          </div>
-          <div class="overflow-x-auto">
-            <table class="w-full text-left text-xs sm:text-sm">
-              <thead class="bg-black/30 text-slate-400 font-bold uppercase tracking-wider text-[11px] border-b border-slate-800">
-                <tr>
-                  <th class="py-3 px-5">Machines</th>
-                  <th class="py-3 px-5">Clamping Force</th>
-                  <th class="py-3 px-5">Part Weight Capacity</th>
-                </tr>
-              </thead>
-              <tbody class="divide-y divide-slate-800 text-slate-200 font-medium">
-                <tr>
-                  <td class="py-3 px-5 font-bold text-white">1&times;</td>
-                  <td class="py-3 px-5">120 Ton</td>
-                  <td class="py-3 px-5 text-slate-400">Up to 107g (Small parts &amp; caps)[cite: 3, 4]</td>
-                </tr>
-                <tr>
-                  <td class="py-3 px-5 font-bold text-white">4&times;</td>
-                  <td class="py-3 px-5">160 Ton</td>
-                  <td class="py-3 px-5 text-slate-400">Up to 298g (Medium enclosures)[cite: 3, 4]</td>
-                </tr>
-                <tr>
-                  <td class="py-3 px-5 font-bold text-white">1&times;</td>
-                  <td class="py-3 px-5">170 Ton</td>
-                  <td class="py-3 px-5 text-slate-400">Up to 310g[cite: 3, 4]</td>
-                </tr>
-                <tr>
-                  <td class="py-3 px-5 font-bold text-white">2&times;</td>
-                  <td class="py-3 px-5">210 Ton</td>
-                  <td class="py-3 px-5 text-slate-400">Up to 429g[cite: 3, 4]</td>
-                </tr>
-                <tr>
-                  <td class="py-3 px-5 font-bold text-white">1&times;</td>
-                  <td class="py-3 px-5">250 Ton</td>
-                  <td class="py-3 px-5 text-slate-400">Up to 625g[cite: 3, 4]</td>
-                </tr>
-                <tr class="bg-blue-950/60 border-y border-blue-500/30">
-                  <td class="py-3 px-5 font-bold text-blue-400">3&times;</td>
-                  <td class="py-3 px-5 font-bold text-white">320T &bull; 420T &bull; 650T Heavy-Duty</td>
-                  <td class="py-3 px-5 font-bold text-blue-400">Up to 2,500g (Large crates &amp; buckets)[cite: 3, 4]</td>
-                </tr>
-                <tr>
-                  <td class="py-3 px-5 font-bold text-white">1&times;</td>
-                  <td class="py-3 px-5">Extrusion Line (120cm)</td>
-                  <td class="py-3 px-5 text-slate-400">400 kg/hr flat sheet plastic[cite: 3, 4]</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ==================== WHAT WE MAKE (FRIENDLY EXAMPLES) ==================== -->
-  <section id="products" class="py-20 bg-slate-50 border-b border-slate-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="mb-12">
-        <p class="text-xs font-bold uppercase tracking-widest text-[#0066CC]">Real World Products</p>
-        <h2 class="text-3xl font-extrabold text-slate-900 mt-1">What Kinds of Parts Can We Build?</h2>
-      </div>
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        
-        <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow transition">
-          <div class="text-2xl mb-3">🌱</div>
-          <h4 class="font-bold text-slate-900 text-base">Farming &amp; Agriculture</h4>
-          <p class="text-xs text-slate-600 mt-2 leading-relaxed">
-            Drip irrigation connectors, greenhouse watering fittings, plant nursery pots, and rugged harvesting crates[cite: 3, 4].
-          </p>
-        </div>
-
-        <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow transition">
-          <div class="text-2xl mb-3">☕</div>
-          <h4 class="font-bold text-slate-900 text-base">Food &amp; Beverage</h4>
-          <p class="text-xs text-slate-600 mt-2 leading-relaxed">
-            Food-grade storage containers, takeout lids, disposable beverage stirrers, and tamper-evident packaging[cite: 3, 4].
-          </p>
-        </div>
-
-        <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow transition">
-          <div class="text-2xl mb-3">💊</div>
-          <h4 class="font-bold text-slate-900 text-base">Health &amp; Pharma</h4>
-          <p class="text-xs text-slate-600 mt-2 leading-relaxed">
-            Sanitary diagnostic vials, safety pill caps, specialized laboratory measuring trays, and syringe components[cite: 3, 4].
-          </p>
-        </div>
-
-        <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow transition">
-          <div class="text-2xl mb-3">🔧</div>
-          <h4 class="font-bold text-slate-900 text-base">Hardware &amp; Consumer</h4>
-          <p class="text-xs text-slate-600 mt-2 leading-relaxed">
-            Structural mounting brackets, tool handles, protective electrical cases, and custom consumer product housings[cite: 3, 4].
-          </p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ==================== CONTACT & WHATSAPP (ASK FOR WILLIAM) ==================== -->
-  <section id="contact" class="py-20 bg-slate-900 text-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-        
-        <!-- Left: Personable Contact Info -->
-        <div class="lg:col-span-5">
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-950 border border-blue-500/30 text-blue-400 text-xs font-bold uppercase tracking-widest mb-4">
-            Direct Communication
-          </div>
-          <h2 class="text-4xl font-extrabold text-white leading-tight">
-            Got an idea?<br/>Let's talk it over.
-          </h2>
-          <p class="text-sm text-slate-300 mt-4 leading-relaxed">
-            Have a question about mold costs, plastic resins, or minimum orders? William and our bilingual engineering team in Guadalajara will answer your questions directly without pressure.
-          </p>
-
-          <div class="mt-8 space-y-4">
-            
-            <!-- WhatsApp Card (Ask for William) -->
-            <a href="https://wa.me/523322555211?text=Hello%20William,%20I'm%20reaching%20out%20about%20a%20plastic%20manufacturing%20project" 
-               target="_blank" rel="noopener noreferrer" 
-               class="flex items-center gap-4 p-4 rounded-2xl bg-[#25D366]/15 border border-[#25D366]/40 hover:bg-[#25D366]/25 transition group">
-              <div class="w-12 h-12 rounded-xl bg-[#25D366] text-white flex items-center justify-center shrink-0 shadow-md">
-                <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24">
-                  <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
-                </svg>
-              </div>
-              <div>
-                <p class="text-xs font-extrabold text-[#25D366] uppercase tracking-wider">WhatsApp &bull; Ask for William</p>
-                <p class="text-base font-bold text-white group-hover:text-[#25D366] transition">+52 (332) 255-5211</p>
-                <p class="text-[11px] text-slate-300">Tap to open WhatsApp chat</p>
-              </div>
-            </a>
-
-            <!-- Direct Email -->
-            <a href="mailto:info@nichemarkettraders.com?subject=Project%20Question%20for%20William" 
-               class="flex items-center gap-4 p-4 rounded-2xl bg-slate-800/80 border border-slate-700 hover:border-[#0066CC] transition group">
-              <div class="w-12 h-12 rounded-xl bg-blue-600 text-white flex items-center justify-center shrink-0 shadow-md">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-              </div>
-              <div>
-                <p class="text-xs font-extrabold text-slate-400 uppercase tracking-wider">General Inquiries</p>
-                <p class="text-base font-bold text-white group-hover:text-blue-400 transition">info@nichemarkettraders.com</p>
-                <p class="text-[11px] text-slate-400">Response within 24 hours</p>
-              </div>
-            </a>
-
-          </div>
-        </div>
-
-        <!-- Right: Simple, Non-Intimidating Inquiry Form -->
-        <div class="lg:col-span-7 bg-white text-slate-800 p-8 sm:p-10 rounded-2xl border border-slate-200 shadow-2xl">
-          <h3 class="text-xl font-extrabold text-slate-900">Tell us what you'd like to build</h3>
-          <p class="text-xs text-slate-500 mt-1">Don't worry if you don't know all the technical details yet—we're here to help.</p>
-
-          <form id="projectForm" class="mt-6 space-y-4">
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <label class="block text-xs font-bold text-slate-700 mb-1">Your Name</label>
-                <input type="text" id="senderName" required placeholder="e.g. Sarah Connor" class="w-full px-3.5 py-2.5 border border-slate-300 rounded-xl text-sm focus:outline-none focus:border-[#0066CC]" />
-              </div>
-              <div>
-                <label class="block text-xs font-bold text-slate-700 mb-1">Company / Brand (Optional)</label>
-                <input type="text" id="senderCompany" placeholder="e.g. Green Valley LLC" class="w-full px-3.5 py-2.5 border border-slate-300 rounded-xl text-sm focus:outline-none focus:border-[#0066CC]" />
-              </div>
-            </div>
-
-            <div>
-              <label class="block text-xs font-bold text-slate-700 mb-1">Your Email</label>
-              <input type="email" id="senderEmail" required placeholder="sarah@example.com" class="w-full px-3.5 py-2.5 border border-slate-300 rounded-xl text-sm focus:outline-none focus:border-[#0066CC]" />
-            </div>
-
-            <div>
-              <label class="block text-xs font-bold text-slate-700 mb-1">What stage are you in?</label>
-              <select id="projectStage" class="w-full px-3.5 py-2.5 border border-slate-300 rounded-xl text-sm focus:outline-none focus:border-[#0066CC] bg-white text-slate-700">
-                <option value="I have an idea / sketch">I just have an idea or rough sketch</option>
-                <option value="I have a 3D CAD design ready">I have a 3D CAD digital design ready</option>
-                <option value="I already own a mold">I already own an existing mold and need production</option>
-                <option value="Exploring costs">Just exploring options and pricing</option>
-              </select>
-            </div>
-
-            <div>
-              <label class="block text-xs font-bold text-slate-700 mb-1">Rough Quantity Needed</label>
-              <input type="text" id="estVolume" placeholder="e.g. 1,000 trial parts or 10,000 monthly" class="w-full px-3.5 py-2.5 border border-slate-300 rounded-xl text-sm focus:outline-none focus:border-[#0066CC]" />
-            </div>
-
-            <div class="pt-2">
-              <button type="submit" class="w-full py-3.5 px-4 rounded-xl text-sm font-extrabold text-white bg-[#0066CC] hover:bg-blue-700 transition shadow-md shadow-blue-500/20">
-                Send Message to William &rarr;
-              </button>
-              <p class="text-[11px] text-center text-slate-400 mt-2">
-                Clicking opens an email message where you can attach photos, sketches, or CAD drawings.
-              </p>
-            </div>
-          </form>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ==================== FOOTER ==================== -->
-  <footer class="bg-black text-slate-400 py-8 border-t border-slate-800 text-xs">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-      <div class="flex items-center gap-2">
-        <span class="font-bold text-white tracking-wider">NM&amp;M</span>
-        <span class="text-slate-600">|</span>
-        <span>Guadalajara, Jalisco, Mexico &bull; Precision Made Simple</span>
-      </div>
-      <p class="text-slate-500">
-        &copy; 2026 Niche Market &amp; Manufacturing. All rights reserved.
-      </p>
-    </div>
-  </footer>
-
-  <!-- ==================== JAVASCRIPT MAILTO ==================== -->
-  <script>
-    document.getElementById('projectForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      
-      const name = document.getElementById('senderName').value;
-      const company = document.getElementById('senderCompany').value || 'N/A';
-      const email = document.getElementById('senderEmail').value;
-      const stage = document.getElementById('projectStage').value;
-      const volume = document.getElementById('estVolume').value || 'Not sure yet';
-
-      const subject = encodeURIComponent(`Project Question for William - ${name}`);
-      const body = encodeURIComponent(
-        `Hi William,\n\n` +
-        `I'm interested in exploring a plastic manufacturing project with NM&M.\n\n` +
-        `-- My Details --\n` +
-        `Name: ${name}\n` +
-        `Company: ${company}\n` +
-        `Email: ${email}\n` +
-        `Current Stage: ${stage}\n` +
-        `Estimated Quantity: ${volume}\n\n` +
-        `[Feel free to attach any photos, sketches, or 3D CAD files here!]`
-      );
-
-      window.location.href = `mailto:info@nichemarkettraders.com?subject=${subject}&body=${body}`;
-    });
-  </script>
-
-</body>
-</html>
