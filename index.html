@@ -1,18 +1,36 @@
-<!-- ==================== BALANCED HEADER ==================== -->
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NM&M | Niche Market & Manufacturing — Guadalajara</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Plus Jakarta Sans for warm, modern readability -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-[#0066CC] selection:text-white">
+
+  <!-- ==================== NAVIGATION BAR ==================== -->
   <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200">
-    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-24 flex items-center justify-between">
       
-      <!-- Brand Logo -->
-      <a href="#" class="flex items-center gap-3">
-        <svg class="h-10 w-10 shrink-0" viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg">
+      <!-- Brand & Vector Ring Logo -->
+      <a href="#" class="flex items-center gap-4 group focus:outline-none" aria-label="NM&M Home">
+        <svg class="shrink-0 transition-transform group-hover:scale-105 duration-200" style="height: 52px; width: 52px;" viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <linearGradient id="solidTeal" x1="0%" y1="0%" x2="100%" y2="100%">
               <stop offset="0%" stop-color="#00A88F" />
               <stop offset="100%" stop-color="#00806A" />
             </linearGradient>
             <linearGradient id="slateMetal" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#5A6B7C" />
-              <stop offset="100%" stop-color="#404E5C" />
+              <stop offset="0%" stop-color="#64748B" />
+              <stop offset="100%" stop-color="#334155" />
             </linearGradient>
           </defs>
           <g transform="translate(160, 160)">
@@ -27,93 +45,62 @@
           </g>
         </svg>
         <div class="flex flex-col">
-          <span class="text-xl font-bold tracking-tight text-[#0066CC] leading-none">NM&amp;M</span>
-          <span class="text-[10px] font-semibold tracking-wider text-slate-500 uppercase mt-0.5">Niche Market &amp; Manufacturing</span>
+          <span class="text-2xl sm:text-3xl font-extrabold tracking-tight text-[#0066CC] leading-none">NM&amp;M</span>
+          <span class="text-[11px] font-bold tracking-[0.2em] text-slate-500 uppercase mt-1">Niche Market &amp; Manufacturing</span>
         </div>
       </a>
 
-      <!-- Clean Menu -->
-      <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-600">
+      <!-- Menu Links -->
+      <nav class="hidden md:flex items-center gap-7 text-sm font-semibold text-slate-600">
         <a href="#how-it-works" class="hover:text-[#0066CC] transition">How It Works</a>
-        <a href="#specs" class="hover:text-[#0066CC] transition">Capacity</a>
-        <a href="#products" class="hover:text-[#0066CC] transition">Products</a>
+        <a href="#nearshore" class="hover:text-[#0066CC] transition">Why Guadalajara</a>
+        <a href="#specs" class="hover:text-[#0066CC] transition">Plant Capacity</a>
+        <a href="#products" class="hover:text-[#0066CC] transition">What We Make</a>
         <a href="#contact" class="hover:text-[#0066CC] transition">Contact</a>
       </nav>
 
-      <!-- Action -->
-      <a href="https://wa.me/523322555211?text=Hello%20William,%20I'm%20interested%20in%20a%20plastics%20project" 
+      <!-- Action Button: Direct to WhatsApp -->
+      <a href="https://wa.me/523322555211?text=Hello%20William,%20I'm%20interested%20in%20a%20plastic%20manufacturing%20project%20with%20NM%26M" 
          target="_blank" rel="noopener noreferrer" 
-         class="px-4 py-2 rounded-lg text-xs font-bold text-white bg-[#0066CC] hover:bg-blue-700 transition">
-        Ask for William
+         class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-bold text-white bg-[#25D366] hover:bg-[#20ba5a] transition shadow-sm hover:shadow">
+        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+          <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+        </svg>
+        <span>WhatsApp William</span>
       </a>
     </div>
   </header>
 
-  <!-- ==================== NATURAL READING-ORDER HERO ==================== -->
-  <section class="py-16 lg:py-20 bg-white border-b border-slate-200">
-    <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+  <!-- ==================== HERO SECTION (CLEAN & PROPORTIONATE) ==================== -->
+  <section class="py-14 lg:py-20 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
       
-      <!-- Readable Story on Left -->
+      <!-- Narrative Left Side -->
       <div class="lg:col-span-7">
-        <span class="inline-block text-xs font-bold uppercase tracking-wider text-[#0066CC] mb-3">
-          Guadalajara, Mexico &bull; Custom Plastics Nearshoring
-        </span>
-        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
-          Start small.<br/>Build something exceptional.
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-[#0066CC] text-xs font-bold uppercase tracking-wider mb-5">
+          <span>🇲🇽</span> Guadalajara, Mexico &bull; Precision Plastics Nearshoring
+        </div>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.15]">
+          Start small.<br/><span class="text-[#0066CC]">Build something exceptional.</span>
         </h1>
-        <p class="mt-5 text-base sm:text-lg text-slate-600 leading-relaxed max-w-xl">
-          Whether you need an initial pilot run of 1,000 parts or full-scale monthly production, our bilingual team in Guadalajara handles mold tooling, testing, and direct delivery straight to your door.
+        <p class="mt-6 text-base sm:text-lg text-slate-600 leading-relaxed max-w-xl">
+          Precision plastic manufacturing without the corporate intimidation. Work directly with our bilingual team on your custom steel tooling, your pilot production run, and cross-border delivery straight to your U.S. door.
         </p>
-        
+
+        <!-- CTA Buttons -->
         <div class="mt-8 flex flex-wrap items-center gap-4">
-          <a href="#contact" class="px-6 py-3 rounded-xl text-sm font-bold text-white bg-[#0066CC] hover:bg-blue-700 transition shadow-sm">
-            Discuss Your Project &rarr;
+          <a href="#contact" class="px-7 py-3.5 rounded-xl text-sm font-bold text-white bg-[#0066CC] hover:bg-blue-700 transition shadow-md shadow-blue-500/20">
+            Tell Us What You Want to Make &rarr;
           </a>
-          <a href="https://wa.me/523322555211?text=Hello%20William,%20I%20have%20a%20question%20about%20plastic%20manufacturing" 
-             target="_blank" rel="noopener noreferrer"
-             class="px-5 py-3 rounded-xl text-sm font-bold text-slate-700 bg-slate-100 hover:bg-slate-200 transition">
-            Chat on WhatsApp
+          <a href="#specs" class="px-6 py-3.5 rounded-xl text-sm font-bold text-slate-700 bg-slate-100 hover:bg-slate-200 transition border border-slate-200">
+            Explore Plant Capacity
           </a>
         </div>
-      </div>
 
-      <!-- Balanced Photo on Right -->
-      <div class="lg:col-span-5">
-        <div class="rounded-xl overflow-hidden border border-slate-200 bg-slate-900 shadow-lg relative aspect-[4/3]">
-          <img 
-            src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80" 
-            alt="Steel Mold Tooling for Plastics" 
-            class="w-full h-full object-cover" 
-            onerror="this.onerror=null; this.src='Machines.png';" 
-          />
-          <div class="absolute bottom-3 left-3 right-3 bg-white/95 backdrop-blur-sm p-3 rounded-lg border border-white/60 shadow-sm text-xs">
-            <span class="font-bold text-slate-900 block">Precision Steel Molds &bull; Full Client Ownership</span>
-            <span class="text-[11px] text-slate-500">Tooling fabricated in Guadalajara with zero recurring license fees.</span>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ==================== STATS STRIP (MOVED BELOW HERO) ==================== -->
-  <section class="border-b border-slate-200 bg-slate-50">
-    <div class="max-w-6xl mx-auto px-6 py-8 grid grid-cols-2 md:grid-cols-4 gap-6 text-center md:text-left">
-      <div>
-        <p class="text-2xl font-extrabold text-slate-900">10+ Years</p>
-        <p class="text-xs text-slate-500 font-medium mt-0.5">Manufacturing Experience[cite: 10]</p>
-      </div>
-      <div>
-        <p class="text-2xl font-extrabold text-slate-900">Up to 650T</p>
-        <p class="text-xs text-slate-500 font-medium mt-0.5">Clamping Force Range[cite: 10]</p>
-      </div>
-      <div>
-        <p class="text-2xl font-extrabold text-slate-900">100% Yours</p>
-        <p class="text-xs text-slate-500 font-medium mt-0.5">Mold Asset Ownership[cite: 10]</p>
-      </div>
-      <div>
-        <p class="text-2xl font-extrabold text-[#0066CC]">Door-to-Door</p>
-        <p class="text-xs text-slate-500 font-medium mt-0.5">Direct U.S. Truck Freight[cite: 10]</p>
-      </div>
-    </div>
-  </section>
+        <!-- Integrated Value Reassurances (Moved Here Naturally) -->
+        <div class="mt-10 pt-8 border-t border-slate-100 flex flex-wrap items-center gap-6 text-xs text-slate-600 font-semibold">
+          <span class="inline-flex items-center gap-1.5">
+            <svg class="w-4 h-4 text-emerald-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+            10+ Years Manufacturing
+          </span>
+          <span class="inline-flex items
