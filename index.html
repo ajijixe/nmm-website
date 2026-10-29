@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="es" class="scroll-smooth">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NM&M | Niche Market & Manufacturing — México</title>
+  <title>NM&M | Niche Market & Manufacturing — Mexico</title>
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Fuentes: Plus Jakarta Sans & JetBrains Mono -->
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -17,12 +17,12 @@
 </head>
 <body class="bg-[#070D1A] text-slate-100 antialiased selection:bg-[#0066CC] selection:text-white">
 
-  <!-- ==================== ENCABEZADO / HEADER ==================== -->
+  <!-- ==================== HEADER ==================== -->
   <header class="sticky top-0 z-50 bg-[#0B1528]/95 backdrop-blur-md border-b border-slate-800 shadow-xl">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       
-      <!-- Logotipo y Nombre de Marca -->
-      <a href="#" class="flex items-center gap-3.5 group focus:outline-none" aria-label="NM&M Inicio">
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-3.5 group focus:outline-none" aria-label="NM&M Home">
         <svg class="shrink-0 transition-transform group-hover:scale-105 duration-200" style="height: 50px; width: 50px;" viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <linearGradient id="solidTeal" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -51,75 +51,76 @@
         </div>
       </a>
 
-      <!-- Navegación -->
+      <!-- Menu Navigation -->
       <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-slate-300">
-        <a href="#workflow" class="hover:text-blue-400 transition" data-en="Engineering" data-es="Ingeniería y Moldes">Ingeniería y Moldes</a>
-        <a href="#why-mexico" class="hover:text-blue-400 transition" data-en="Why Mexico" data-es="Ventaja México">Ventaja México</a>
-        <a href="#specs" class="hover:text-blue-400 transition" data-en="Plant Capacity" data-es="Capacidad de Inyectoras">Capacidad de Inyectoras</a>
-        <a href="#materials" class="hover:text-blue-400 transition" data-en="Resins &amp; Materials" data-es="Resinas y Materiales">Resinas y Materiales</a>
-        <a href="#products" class="hover:text-blue-400 transition" data-en="Applications" data-es="Sectores">Sectores</a>
-        <a href="#contact" class="hover:text-blue-400 transition" data-en="RFQ &amp; Contact" data-es="Cotizaciones">Cotizaciones</a>
+        <a href="#workflow" class="hover:text-blue-400 transition" data-en="Engineering" data-es="Ingeniería y Moldes">Engineering</a>
+        <a href="#why-mexico" class="hover:text-blue-400 transition" data-en="Why Mexico" data-es="Ventaja México">Why Mexico</a>
+        <a href="#specs" class="hover:text-blue-400 transition" data-en="Plant Capacity" data-es="Capacidad de Inyectoras">Plant Capacity</a>
+        <a href="#materials" class="hover:text-blue-400 transition" data-en="Resins &amp; Materials" data-es="Resinas y Materiales">Resins &amp; Materials</a>
+        <a href="#products" class="hover:text-blue-400 transition" data-en="Applications" data-es="Sectores">Applications</a>
+        <a href="#contact" class="hover:text-blue-400 transition" data-en="RFQ &amp; Contact" data-es="Cotizaciones">RFQ &amp; Contact</a>
       </nav>
 
-      <!-- Selector de Idioma + WhatsApp -->
+      <!-- Language Selector + WhatsApp -->
       <div class="flex items-center gap-3">
-        <button id="langToggleBtn" type="button" class="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-mono-tech font-bold text-slate-200 bg-slate-800 hover:bg-slate-700 border border-slate-600 transition shadow-sm cursor-pointer" aria-label="Cambiar Idioma">
-          <span id="langEnIndicator" class="text-slate-400">EN</span>
+        <button id="langToggleBtn" type="button" class="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-mono-tech font-bold text-slate-200 bg-slate-800 hover:bg-slate-700 border border-slate-600 transition shadow-sm cursor-pointer" aria-label="Toggle Language">
+          <span id="langEnIndicator" class="text-blue-400">EN</span>
           <span class="text-slate-500">/</span>
-          <span id="langEsIndicator" class="text-blue-400">ES</span>
+          <span id="langEsIndicator" class="text-slate-400">ES</span>
         </button>
 
-        <a id="headerWhatsappBtn" href="https://wa.me/523322555211?text=Hola%20William,%20me%20comunico%20para%20cotizar%20un%20proyecto%20de%20inyecci%C3%B3n%20de%20pl%C3%A1stico%20con%20NM%26M" 
+        <a id="headerWhatsappBtn" href="https://wa.me/523322555211?text=Hello%20William,%20I'm%20reaching%20out%20with%20a%20plastic%20injection%20molding%20project" 
            target="_blank" rel="noopener noreferrer" 
            class="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs sm:text-sm font-bold text-white bg-[#25D366] hover:bg-[#20ba5a] transition shadow-lg shadow-[#25D366]/20">
           <svg class="w-4 h-4 fill-current shrink-0" viewBox="0 0 24 24">
             <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
           </svg>
-          <span data-en="Ask for William" data-es="Contactar a William">Contactar a William</span>
+          <span data-en="Ask for William" data-es="Contactar a William">Ask for William</span>
         </a>
       </div>
     </div>
   </header>
 
-  <!-- ==================== HERO SECTION (FORMALIDAD INDUSTRIAL EN USTED) ==================== -->
+  <!-- ==================== HERO SECTION ==================== -->
   <section class="pt-8 pb-16 lg:pt-10 lg:pb-20 bg-[#0F1C33] border-b border-slate-800 relative">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
       
       <div class="lg:col-span-7">
         <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-950/80 border border-blue-500/40 text-blue-400 text-xs font-bold uppercase tracking-wider mb-5">
-          <span>🇲🇽</span> <span data-en="Mexico Nearshoring &bull; Guadalajara Industrial Hub" data-es="Nearshoring en México &bull; Parque Industrial Guadalajara">Nearshoring en México &bull; Parque Industrial Guadalajara</span>
+          <span>🇲🇽</span> <span data-en="Mexico Nearshoring &bull; Guadalajara Industrial Hub" data-es="Nearshoring en México &bull; Parque Industrial Guadalajara">Mexico Nearshoring &bull; Guadalajara Industrial Hub</span>
         </div>
         <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.1]">
-          <span data-en="Start small." data-es="Iniciamos con lotes piloto.">Iniciamos con lotes piloto.</span><br/>
-          <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-teal-400" data-en="Scale precision production." data-es="Escalamos la cadencia de producción a su ritmo.">Escalamos la cadencia de producción a su ritmo.</span>
+          <span data-en="Start with pilot runs." data-es="Iniciamos con lotes piloto.">Start with pilot runs.</span><br/>
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-teal-400" data-en="Scale production at your pace." data-es="Escalamos la cadencia de producción a su ritmo.">Scale production at your pace.</span>
         </h1>
         <p class="mt-5 text-base sm:text-lg text-slate-300 leading-relaxed max-w-xl" data-en="High-precision plastics injection molding without bureaucratic friction. Work directly with our bilingual engineering team on tool design, rapid T1 mold sampling, and direct truck freight to your U.S. facility." data-es="Inyección de termoplásticos de alta precisión con trato directo y sin fricción burocrática. Colabore directamente con nuestro equipo de ingeniería bilingüe en el desarrollo de herramentales, aprobación rápida de muestras T1 y flete directo a sus instalaciones en EE. UU. y Canadá.">
-          Inyección de termoplásticos de alta precisión con trato directo y sin fricción burocrática. Colabore directamente con nuestro equipo de ingeniería bilingüe en el desarrollo de herramentales, aprobación rápida de muestras T1 y flete directo a sus instalaciones en EE. UU. y Canadá.
+          High-precision plastics injection molding without bureaucratic friction. Work directly with our bilingual engineering team on tool design, rapid T1 mold sampling, and direct truck freight to your U.S. facility.
         </p>
 
         <div class="mt-8 flex flex-wrap items-center gap-4">
           <a href="#contact" class="px-7 py-3.5 rounded-xl text-sm font-bold text-white bg-[#0066CC] hover:bg-blue-600 transition shadow-lg shadow-blue-500/25" data-en="Submit CAD for DFM Review &rarr;" data-es="Enviar CAD para Análisis DFM &rarr;">
-            Enviar CAD para Análisis DFM &rarr;
+            Submit CAD for DFM Review &rarr;
           </a>
-          <a id="heroWhatsappBtn" href="https://wa.me/523322555211?text=Hola%20William,%20tengo%20un%20proyecto%20de%20inyecci%C3%B3n%20de%20pl%C3%A1stico%20para%20revisi%C3%B3n%20t%C3%A9cnica" 
+          <a id="heroWhatsappBtn" href="https://wa.me/523322555211?text=Hello%20William,%20I%20have%20an%20injection%20molding%20part%20to%20review" 
              target="_blank" rel="noopener noreferrer" 
              class="px-6 py-3.5 rounded-xl text-sm font-bold text-slate-200 bg-slate-800 hover:bg-slate-700 transition border border-slate-700" data-en="WhatsApp William" data-es="WhatsApp William">
             WhatsApp William
           </a>
         </div>
 
+        <!-- Metric Badges: Strictly Separate Language Values -->
         <div class="mt-10 pt-6 border-t border-slate-800 grid grid-cols-3 gap-4 text-xs font-semibold text-slate-300">
           <div>
-            <p class="text-xl sm:text-2xl font-black text-white font-mono-tech">10+ Años</p>
-            <p class="text-[11px] text-slate-400 mt-0.5" data-en="Molding Experience" data-es="En Inyección de Plástico">En Inyección de Plástico</p>
+            <p id="badgeYears" class="text-xl sm:text-2xl font-black text-white font-mono-tech" data-en="10+ Yrs" data-es="10+ Años">10+ Yrs</p>
+            <p class="text-[11px] text-slate-400 mt-0.5" data-en="Molding Experience" data-es="En Inyección de Plástico">Molding Experience</p>
           </div>
           <div>
             <p class="text-xl sm:text-2xl font-black text-white font-mono-tech">100%</p>
-            <p class="text-[11px] text-slate-400 mt-0.5" data-en="Client Mold Ownership" data-es="Propiedad del Herramental">Propiedad del Herramental</p>
+            <p class="text-[11px] text-slate-400 mt-0.5" data-en="Client Tool Ownership" data-es="Propiedad del Herramental">Client Tool Ownership</p>
           </div>
           <div>
-            <p class="text-xl sm:text-2xl font-black text-emerald-400 font-mono-tech">T-MEC</p>
-            <p class="text-[11px] text-slate-400 mt-0.5" data-en="Duty-Free U.S. Transit" data-es="0% Arancel EE. UU. / Can.">0% Arancel EE. UU. / Can.</p>
+            <p id="badgeTreaty" class="text-xl sm:text-2xl font-black text-emerald-400 font-mono-tech" data-en="USMCA" data-es="T-MEC">USMCA</p>
+            <p class="text-[11px] text-slate-400 mt-0.5" data-en="Duty-Free U.S. Transit" data-es="0% Arancel EE. UU. / Can.">Duty-Free U.S. Transit</p>
           </div>
         </div>
       </div>
@@ -128,15 +129,15 @@
         <div class="rounded-2xl overflow-hidden border border-slate-700 bg-slate-900 shadow-2xl relative aspect-[4/3] group">
           <img 
             src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80" 
-            alt="Herramental y Molde de Inyección de Precisión" 
+            alt="Injection Mold Tooling" 
             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
           />
           <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent"></div>
           <div class="absolute bottom-4 left-4 right-4 bg-slate-900/95 backdrop-blur-md p-4 rounded-xl border border-slate-700 shadow-md">
             <div class="flex items-center justify-between">
               <div>
-                <p class="text-xs font-bold text-white uppercase tracking-wider" data-en="Tooling &bull; Active Production Plant" data-es="Herramentales &bull; Planta Activa en México">Herramentales &bull; Planta Activa en México</p>
-                <p class="text-[11px] text-slate-400 mt-0.5" data-en="Hardened steel molds, pilot T1 samples &amp; scale runs." data-es="Moldes de acero templado, muestras T1 y producción en serie.">Moldes de acero templado, muestras T1 y producción en serie.</p>
+                <p class="text-xs font-bold text-white uppercase tracking-wider" data-en="Tooling &bull; Active Production Plant" data-es="Herramentales &bull; Planta Activa en México">Tooling &bull; Active Production Plant</p>
+                <p class="text-[11px] text-slate-400 mt-0.5" data-en="Hardened steel molds, pilot T1 samples &amp; scale runs." data-es="Moldes de acero templado, muestras T1 y producción en serie.">Hardened steel molds, pilot T1 samples &amp; scale runs.</p>
               </div>
               <span class="px-2.5 py-1 text-[11px] font-mono-tech font-bold rounded bg-blue-500/20 text-blue-300 border border-blue-500/30">
                 120T–650T
@@ -149,208 +150,208 @@
     </div>
   </section>
 
-  <!-- ==================== PROTOCOLO DE INGENIERÍA ==================== -->
+  <!-- ==================== ENGINEERING WORKFLOW ==================== -->
   <section id="workflow" class="py-20 bg-[#0A1426] text-white border-b border-slate-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-3xl mx-auto mb-16">
         <span class="inline-block px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400 text-xs font-mono-tech font-bold uppercase tracking-widest mb-2" data-en="Engineering Protocol" data-es="Protocolo de Ingeniería">
-          Protocolo de Ingeniería
+          Engineering Protocol
         </span>
-        <h2 class="text-3xl sm:text-4xl font-black text-white mt-1" data-en="From CAD Model to Certified Parts" data-es="Del Archivo CAD a Piezas Inspeccionadas">Del Archivo CAD a Piezas Inspeccionadas</h2>
+        <h2 class="text-3xl sm:text-4xl font-black text-white mt-1" data-en="From CAD Model to Certified Parts" data-es="Del Archivo CAD a Piezas Inspeccionadas">From CAD Model to Certified Parts</h2>
         <p class="text-sm text-slate-400 mt-3 leading-relaxed" data-en="Structured manufacturing management designed for design engineers, procurement specialists, and product founders." data-es="Gestión técnica estructurada para ingenieros de desarrollo, gerentes de planta y directores de compras.">
-          Gestión técnica estructurada para ingenieros de desarrollo, gerentes de planta y directores de compras.
+          Structured manufacturing management designed for design engineers, procurement specialists, and product founders.
         </p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-        <!-- Paso 1 -->
+        <!-- Step 1 -->
         <div class="bg-[#111E38] p-6 rounded-2xl border border-slate-800 shadow-lg hover:border-blue-500/40 transition duration-300">
           <div class="w-10 h-10 rounded-xl bg-blue-500/20 text-blue-400 font-mono-tech font-black flex items-center justify-center text-sm mb-4">01</div>
-          <h3 class="text-base font-bold text-white" data-en="DFM &amp; Gate Analysis" data-es="Análisis DFM y Compuertas">Análisis DFM y Compuertas</h3>
+          <h3 class="text-base font-bold text-white" data-en="DFM &amp; Gate Analysis" data-es="DFM y Punto de Inyección">DFM &amp; Gate Analysis</h3>
           <p class="text-xs text-slate-400 mt-2 leading-relaxed" data-en="Review of wall thickness uniformity, draft angles, parting lines, and weld line mitigation." data-es="Revisión de espesores de pared, ángulos de desmolde, líneas de partición y balance de colada para mitigar rechupes y líneas de unión.">
-            Revisión de espesores de pared, ángulos de desmolde, líneas de partición y balance de colada para mitigar rechupes y líneas de unión.
+            Review of wall thickness uniformity, draft angles, parting lines, and weld line mitigation.
           </p>
         </div>
 
-        <!-- Paso 2 -->
+        <!-- Step 2 -->
         <div class="bg-[#111E38] p-6 rounded-2xl border border-slate-800 shadow-lg hover:border-blue-500/40 transition duration-300">
           <div class="w-10 h-10 rounded-xl bg-blue-500/20 text-blue-400 font-mono-tech font-black flex items-center justify-center text-sm mb-4">02</div>
-          <h3 class="text-base font-bold text-white" data-en="Tool Build (100% Client Owned)" data-es="Maquinado del Molde (Propiedad del Cliente)">Maquinado del Molde (Propiedad del Cliente)</h3>
+          <h3 class="text-base font-bold text-white" data-en="Tool Build (100% Client Owned)" data-es="Fabricación del Molde (Propiedad 100% Suya)">Tool Build (100% Client Owned)</h3>
           <p class="text-xs text-slate-400 mt-2 leading-relaxed" data-en="P20, NAK80, or H13 hardened tool steel cavities with hot or cold runner systems tailored to your target cycle time." data-es="Aceros P20, NAK80 o H13 templados. Colada fría o caliente calculada para el tiempo de ciclo. El molde es 100% su activo legal, sin regalías.">
-            Aceros P20, NAK80 o H13 templados. Colada fría o caliente calculada para el tiempo de ciclo. El molde es 100% su activo legal, sin regalías.
+            P20, NAK80, or H13 hardened tool steel cavities with hot or cold runner systems tailored to your target cycle time.
           </p>
         </div>
 
-        <!-- Paso 3 -->
+        <!-- Step 3 -->
         <div class="bg-[#111E38] p-6 rounded-2xl border border-slate-800 shadow-lg hover:border-blue-500/40 transition duration-300">
           <div class="w-10 h-10 rounded-xl bg-blue-500/20 text-blue-400 font-mono-tech font-black flex items-center justify-center text-sm mb-4">03</div>
-          <h3 class="text-base font-bold text-white" data-en="T1 Sampling &amp; Verification" data-es="Muestreo T1 y Validación CMM">Muestreo T1 y Validación CMM</h3>
+          <h3 class="text-base font-bold text-white" data-en="T1 Sampling &amp; Verification" data-es="Muestras Físicas T1 y Validación">T1 Sampling &amp; Verification</h3>
           <p class="text-xs text-slate-400 mt-2 leading-relaxed" data-en="First-article pilot samples shipped directly to your desk with dimensional inspection reports." data-es="Envío express de primeras piezas físicas con reporte dimensional CMM, pesaje de precisión y pruebas de ensamble funcional.">
-            Envío express de primeras piezas físicas con reporte dimensional CMM, pesaje de precisión y pruebas de ensamble funcional.
+            First-article pilot samples shipped directly to your desk with dimensional inspection reports.
           </p>
         </div>
 
-        <!-- Paso 4 -->
+        <!-- Step 4 -->
         <div class="bg-[#111E38] p-6 rounded-2xl border border-slate-800 shadow-lg hover:border-blue-500/40 transition duration-300">
           <div class="w-10 h-10 rounded-xl bg-blue-500/20 text-blue-400 font-mono-tech font-black flex items-center justify-center text-sm mb-4">04</div>
-          <h3 class="text-base font-bold text-white" data-en="Production &amp; Bonded Transit" data-es="Producción y Flete Puerta a Puerta">Producción y Flete Puerta a Puerta</h3>
-          <p class="text-xs text-slate-400 mt-2 leading-relaxed" data-en="Closed-loop process parameter control, lot packaging, and cross-border freight into the continental U.S." data-es="Control estricto de parámetros en prensa, empaque industrial por lote y logística terrestre directa hacia sus instalaciones en México o EE. UU.">
-            Control estricto de parámetros en prensa, empaque industrial por lote y logística terrestre directa hacia sus instalaciones en México o EE. UU.
+          <h3 class="text-base font-bold text-white" data-en="Production &amp; Direct Logistics" data-es="Producción en Serie y Entrega Directa">Production &amp; Direct Logistics</h3>
+          <p class="text-xs text-slate-400 mt-2 leading-relaxed" data-en="Closed-loop process parameter control, lot packaging, and direct overland freight into the continental U.S." data-es="Control estricto de parámetros en prensa, empaque industrial por lote y logística terrestre directa hacia sus instalaciones en México o EE. UU.">
+            Closed-loop process parameter control, lot packaging, and direct overland freight into the continental U.S.
           </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ==================== VENTAJA MÉXICO ==================== -->
+  <!-- ==================== WHY MEXICO ==================== -->
   <section id="why-mexico" class="py-20 bg-[#0F1C33] border-b border-slate-800 text-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="mb-12">
-        <p class="text-xs font-bold uppercase tracking-widest text-blue-400" data-en="Nearshoring Advantage" data-es="Ventaja Logística">Ventaja Logística</p>
-        <h2 class="text-3xl sm:text-4xl font-black text-white mt-1" data-en="Why Mexico Beats Traditional Overseas Sourcing" data-es="Por Qué México Supera la Fabricación en Asia">Por Qué México Supera la Fabricación en Asia</h2>
-        <p class="text-sm text-slate-400 mt-2" data-en="Eliminate ocean port congestion, volatile container freight rates, and 12-hour timezone delays." data-es="Elimine semanas perdidas en altamar, fletes marítimos descontrolados y desfases de 12 a 14 horas de horario.">Elimine semanas perdidas en altamar, fletes marítimos descontrolados y desfases de 12 a 14 horas de horario.</p>
+        <p class="text-xs font-bold uppercase tracking-widest text-blue-400" data-en="Nearshoring Advantage" data-es="Ventaja Logística">Nearshoring Advantage</p>
+        <h2 class="text-3xl sm:text-4xl font-black text-white mt-1" data-en="Why Mexico Beats Traditional Overseas Sourcing" data-es="Por Qué México Supera la Fabricación en Asia">Why Mexico Beats Traditional Overseas Sourcing</h2>
+        <p class="text-sm text-slate-400 mt-2" data-en="Eliminate ocean port congestion, volatile container freight rates, and 12-hour timezone delays." data-es="Elimine semanas perdidas en altamar, fletes marítimos descontrolados y desfases de 12 a 14 horas de horario.">Eliminate ocean port congestion, volatile container freight rates, and 12-hour timezone delays.</p>
       </div>
 
       <div class="border border-slate-800 rounded-2xl overflow-hidden bg-[#111E38] shadow-xl">
-        <!-- Fila 1 -->
+        <!-- Row 1 -->
         <div class="grid grid-cols-1 md:grid-cols-12 p-6 border-b border-slate-800 items-center gap-4">
           <div class="md:col-span-3">
-            <span class="text-base font-bold text-white" data-en="Transit Lead Time" data-es="Tiempos de Tránsito">Tiempos de Tránsito</span>
+            <span class="text-base font-bold text-white" data-en="Transit Lead Time" data-es="Tiempos de Tránsito">Transit Lead Time</span>
           </div>
           <div class="md:col-span-4 text-sm text-slate-400">
-            <span class="font-bold text-slate-300 block text-xs uppercase tracking-wider mb-1" data-en="Traditional Overseas" data-es="Manufactura en Asia">Manufactura en Asia</span>
-            <span data-en="30 to 60 days on open water, port bottlenecks, and demurrage risks." data-es="30 a 60 días en barco, cuellos de botella en puertos marítimos y sobrecostos por almacenaje.">30 a 60 días en barco, cuellos de botella en puertos marítimos y sobrecostos por almacenaje.</span>
+            <span class="font-bold text-slate-300 block text-xs uppercase tracking-wider mb-1" data-en="Traditional Overseas" data-es="Manufactura en Asia">Traditional Overseas</span>
+            <span data-en="30 to 60 days on open water, port bottlenecks, and demurrage risks." data-es="30 a 60 días en contenedor marítimo, saturación portuaria y sobrecostos por almacenaje.">30 to 60 days on open water, port bottlenecks, and demurrage risks.</span>
           </div>
           <div class="md:col-span-5 text-sm text-slate-200 bg-[#172748] p-4 rounded-xl border border-blue-500/20">
-            <span class="font-bold text-blue-400 block text-xs uppercase tracking-wider mb-1" data-en="NM&amp;M in Mexico" data-es="NM&amp;M en Guadalajara">NM&amp;M en Guadalajara</span>
-            <span data-en="<strong>Days by direct dry-van truck.</strong> Seamless highway transit across the Laredo/Texas commercial crossings." data-es="<strong>Días por transporte terrestre.</strong> Tránsito directo en caja seca cruzando ágilmente por Laredo hacia la red carretera de Norteamérica."><strong>Días por transporte terrestre.</strong> Tránsito directo en caja seca cruzando ágilmente por Laredo hacia la red carretera de Norteamérica.</span>
+            <span class="font-bold text-blue-400 block text-xs uppercase tracking-wider mb-1" data-en="NM&amp;M in Mexico" data-es="NM&amp;M en Guadalajara">NM&amp;M in Mexico</span>
+            <span data-en="<strong>Days by direct dry-van truck.</strong> Seamless highway transit across the Laredo/Texas commercial crossings." data-es="<strong>Días por transporte terrestre.</strong> Tránsito directo en caja seca cruzando ágilmente por Laredo hacia la red carretera de Norteamérica."><strong>Days by direct dry-van truck.</strong> Seamless highway transit across the Laredo/Texas commercial crossings.</span>
           </div>
         </div>
 
-        <!-- Fila 2 -->
+        <!-- Row 2 -->
         <div class="grid grid-cols-1 md:grid-cols-12 p-6 border-b border-slate-800 items-center gap-4">
           <div class="md:col-span-3">
-            <span class="text-base font-bold text-white" data-en="Tariffs &amp; Compliance" data-es="Aranceles y T-MEC">Aranceles y T-MEC</span>
+            <span class="text-base font-bold text-white" data-en="Tariffs &amp; Compliance" data-es="Aranceles y T-MEC">Tariffs &amp; Compliance</span>
           </div>
           <div class="md:col-span-4 text-sm text-slate-400">
-            <span class="font-bold text-slate-300 block text-xs uppercase tracking-wider mb-1" data-en="Traditional Overseas" data-es="Manufactura en Asia">Manufactura en Asia</span>
-            <span data-en="Unpredictable section tariffs, punitive import duties, and customs audits." data-es="Aranceles punitivos, cuotas compensatorias inesperadas y trámites aduanales lentos.">Aranceles punitivos, cuotas compensatorias inesperadas y trámites aduanales lentos.</span>
+            <span class="font-bold text-slate-300 block text-xs uppercase tracking-wider mb-1" data-en="Traditional Overseas" data-es="Manufactura en Asia">Traditional Overseas</span>
+            <span data-en="Unpredictable section tariffs, punitive import duties, and customs audits." data-es="Aranceles punitivos, cuotas compensatorias inesperadas y trámites aduanales lentos.">Unpredictable section tariffs, punitive import duties, and customs audits.</span>
           </div>
           <div class="md:col-span-5 text-sm text-slate-200 bg-[#172748] p-4 rounded-xl border border-blue-500/20">
-            <span class="font-bold text-blue-400 block text-xs uppercase tracking-wider mb-1" data-en="NM&amp;M in Mexico" data-es="NM&amp;M en Guadalajara">NM&amp;M en Guadalajara</span>
-            <span data-en="<strong>USMCA 0% Tariff Certification.</strong> Duty-free North American trade compliance with predictable landed invoicing." data-es="<strong>Certificado de Origen T-MEC (0% Arancel).</strong> Libre comercio garantizado en Norteamérica y costos landed completamente estables."><strong>Certificado de Origen T-MEC (0% Arancel).</strong> Libre comercio garantizado en Norteamérica y costos landed completamente estables.</span>
+            <span class="font-bold text-blue-400 block text-xs uppercase tracking-wider mb-1" data-en="NM&amp;M in Mexico" data-es="NM&amp;M en Guadalajara">NM&amp;M in Mexico</span>
+            <span data-en="<strong>USMCA 0% Tariff Certification.</strong> Duty-free North American trade compliance with predictable landed invoicing." data-es="<strong>Certificado de Origen T-MEC (0% Arancel).</strong> Libre comercio garantizado en Norteamérica y costos landed completamente estables."><strong>USMCA 0% Tariff Certification.</strong> Duty-free North American trade compliance with predictable landed invoicing.</span>
           </div>
         </div>
 
-        <!-- Fila 3 -->
+        <!-- Row 3 -->
         <div class="grid grid-cols-1 md:grid-cols-12 p-6 items-center gap-4">
           <div class="md:col-span-3">
-            <span class="text-base font-bold text-white" data-en="Engineering Alignment" data-es="Comunicación de Ingeniería">Comunicación de Ingeniería</span>
+            <span class="text-base font-bold text-white" data-en="Engineering Alignment" data-es="Comunicación Técnica">Engineering Alignment</span>
           </div>
           <div class="md:col-span-4 text-sm text-slate-400">
-            <span class="font-bold text-slate-300 block text-xs uppercase tracking-wider mb-1" data-en="Traditional Overseas" data-es="Manufactura en Asia">Manufactura en Asia</span>
+            <span class="font-bold text-slate-300 block text-xs uppercase tracking-wider mb-1" data-en="Traditional Overseas" data-es="Manufactura en Asia">Traditional Overseas</span>
             <span data-en="12-hour timezone delays, communication gaps, and difficult onsite tool audits." data-es="Diferencias de 12 a 14 horas, barreras de idioma y traslados inviables para auditar herramentales.">Diferencias de 12 a 14 horas, barreras de idioma y traslados inviables para auditar herramentales.</span>
           </div>
           <div class="md:col-span-5 text-sm text-slate-200 bg-[#172748] p-4 rounded-xl border border-blue-500/20">
-            <span class="font-bold text-blue-400 block text-xs uppercase tracking-wider mb-1" data-en="NM&amp;M in Mexico" data-es="NM&amp;M en Guadalajara">NM&amp;M en Guadalajara</span>
-            <span data-en="<strong>Same Central Time Zone.</strong> Native bilingual engineering leadership, real-time video mold trials, and direct plant access." data-es="<strong>Mismo Huso Horario Central.</strong> Liderazgo técnico bilingüe, pruebas de tiro en vivo por videollamada y acceso abierto a nuestras instalaciones."><strong>Mismo Huso Horario Central.</strong> Liderazgo técnico bilingüe, pruebas de tiro en vivo por videollamada y acceso abierto a nuestras instalaciones.</span>
+            <span class="font-bold text-blue-400 block text-xs uppercase tracking-wider mb-1" data-en="NM&amp;M in Mexico" data-es="NM&amp;M en Guadalajara">NM&amp;M in Mexico</span>
+            <span data-en="<strong>Same Central Time Zone.</strong> Native bilingual engineering leadership, real-time video mold trials, and direct plant access." data-es="<strong>Mismo Huso Horario Central.</strong> Liderazgo técnico bilingüe, pruebas de tiro en vivo por videollamada y acceso abierto a nuestras instalaciones."><strong>Same Central Time Zone.</strong> Native bilingual engineering leadership, real-time video mold trials, and direct plant access.</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ==================== CAPACIDAD DE INYECTORAS ==================== -->
+  <!-- ==================== PLANT SPECIFICATIONS ==================== -->
   <section id="specs" class="py-20 bg-[#0A1426] text-white border-b border-slate-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="mb-8">
-        <p class="text-xs font-bold uppercase tracking-widest text-blue-400" data-en="Plant Architecture &amp; Tonnage" data-es="Capacidad Instalada">Capacidad Instalada</p>
-        <h2 class="text-3xl sm:text-4xl font-black text-white mt-1" data-en="Machine Fleet &amp; Specifications" data-es="Parque de Inyectoras y Especificaciones">Parque de Inyectoras y Especificaciones</h2>
-        <p class="text-sm text-slate-300 mt-2" data-en="Active injection presses ranging from 120 Tons to 650 Tons plus continuous sheet extrusion." data-es="Líneas de inyección activas desde 120 hasta 650 Toneladas y línea continua de extrusión de lámina plástica.">Líneas de inyección activas desde 120 hasta 650 Toneladas y línea continua de extrusión de lámina plástica.</p>
+        <p class="text-xs font-bold uppercase tracking-widest text-blue-400" data-en="Plant Architecture &amp; Tonnage" data-es="Capacidad Instalada">Plant Architecture &amp; Tonnage</p>
+        <h2 class="text-3xl sm:text-4xl font-black text-white mt-1" data-en="Machine Fleet &amp; Specifications" data-es="Parque de Inyectoras y Especificaciones">Machine Fleet &amp; Specifications</h2>
+        <p class="text-sm text-slate-300 mt-2" data-en="Active injection presses ranging from 120 Tons to 650 Tons plus continuous sheet extrusion." data-es="Líneas de inyección activas desde 120 hasta 650 Toneladas y línea continua de extrusión de lámina plástica.">Active injection presses ranging from 120 Tons to 650 Tons plus continuous sheet extrusion.</p>
       </div>
 
       <div class="p-4 bg-[#111E38] border border-blue-500/30 rounded-xl mb-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
         <div>
-          <p class="text-xs text-blue-400 font-bold uppercase tracking-wider" data-en="Fleet Clamping Force Range" data-es="Fuerza de Cierre Disponible">Fuerza de Cierre Disponible</p>
-          <p class="text-sm text-slate-200 mt-0.5" data-en="Hydraulic and toggle presses spanning <strong>120 Tons up to 650 Tons</strong>" data-es="Prensas hidráulicas y de rodillera que abarcan de <strong>120 a 650 Toneladas</strong>">Prensas hidráulicas y de rodillera que abarcan de <strong>120 a 650 Toneladas</strong></p>
+          <p class="text-xs text-blue-400 font-bold uppercase tracking-wider" data-en="Fleet Clamping Force Range" data-es="Fuerza de Cierre Disponible">Fleet Clamping Force Range</p>
+          <p class="text-sm text-slate-200 mt-0.5" data-en="Hydraulic and toggle presses spanning <strong>120 Tons up to 650 Tons</strong>" data-es="Prensas hidráulicas y de rodillera que abarcan de <strong>120 a 650 Toneladas</strong>">Hydraulic and toggle presses spanning <strong>120 Tons up to 650 Tons</strong></p>
         </div>
         <span class="px-3.5 py-1.5 rounded-lg bg-blue-500/20 text-blue-300 font-mono-tech text-xs font-bold border border-blue-500/40 w-fit" data-en="Max Shot: 2,500g (2.5 kg)" data-es="Capacidad de Tiro Máx: 2.5 kg">
-          Capacidad de Tiro Máx: 2.5 kg
+          Max Shot: 2,500g (2.5 kg)
         </span>
       </div>
 
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-        <!-- Foto de Nave de Producción -->
+        <!-- Plant Photo -->
         <div class="lg:col-span-5 rounded-2xl overflow-hidden border border-slate-700 bg-slate-900 shadow-2xl">
           <div class="h-64 sm:h-72 w-full overflow-hidden bg-slate-950 relative">
             <img 
               src="Machines.png" 
-              alt="Planta de Inyección de Plástico en Guadalajara, México" 
+              alt="Planta de Inyección en Guadalajara" 
               class="w-full h-full object-cover object-center filter contrast-[1.05]" 
               onerror="this.onerror=null; this.src='Machines.jpg';" 
             />
           </div>
           <div class="px-5 py-3.5 bg-[#0B1528] border-t border-slate-800 flex justify-between items-center text-xs">
-            <span class="font-bold text-slate-200" data-en="Guadalajara Production Facility" data-es="Planta de Producción en Guadalajara">Planta de Producción en Guadalajara</span>
+            <span class="font-bold text-slate-200" data-en="Guadalajara Production Facility" data-es="Planta de Producción en Guadalajara">Guadalajara Production Facility</span>
             <span class="text-emerald-400 font-bold flex items-center gap-1.5">
-              <span class="w-2 h-2 rounded-full bg-emerald-400"></span> <span data-en="10 Active Production Lines" data-es="10 Líneas de Inyección en Operación">10 Líneas de Inyección en Operación</span>
+              <span class="w-2 h-2 rounded-full bg-emerald-400"></span> <span data-en="10 Active Production Lines" data-es="10 Líneas de Inyección en Operación">10 Active Production Lines</span>
             </span>
           </div>
         </div>
 
-        <!-- Tabla de Capacidades -->
+        <!-- Table -->
         <div class="lg:col-span-7 bg-[#111E38] rounded-2xl border border-slate-800 overflow-hidden shadow-2xl">
           <div class="p-5 border-b border-slate-800 bg-black/20 flex justify-between items-center">
             <div>
-              <h3 class="text-base font-bold text-white" data-en="Press Line Breakdown" data-es="Inventario de Inyectoras">Inventario de Inyectoras</h3>
-              <p class="text-xs text-slate-400" data-en="Calibrated clamping force matched to part projected area" data-es="Fuerza de cierre calibrada para el área proyectada de la pieza">Fuerza de cierre calibrada para el área proyectada de la pieza</p>
+              <h3 class="text-base font-bold text-white" data-en="Press Line Breakdown" data-es="Inventario de Inyectoras">Press Line Breakdown</h3>
+              <p class="text-xs text-slate-400" data-en="Calibrated clamping force matched to part projected area" data-es="Fuerza de cierre calibrada para el área proyectada de la pieza">Calibrated clamping force matched to part projected area</p>
             </div>
-            <span class="text-xs px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 font-mono-tech font-semibold border border-blue-500/30" data-en="10 Presses" data-es="10 Inyectoras">10 Inyectoras</span>
+            <span class="text-xs px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 font-mono-tech font-semibold border border-blue-500/30" data-en="10 Presses" data-es="10 Inyectoras">10 Presses</span>
           </div>
           <div class="overflow-x-auto">
             <table class="w-full text-left text-xs sm:text-sm">
               <thead class="bg-black/30 text-slate-400 font-bold uppercase tracking-wider text-[11px] border-b border-slate-800">
                 <tr>
-                  <th class="py-3 px-5" data-en="Quantity" data-es="Cant.">Cant.</th>
-                  <th class="py-3 px-5" data-en="Clamping Force" data-es="Fuerza de Cierre (Tonelaje)">Fuerza de Cierre (Tonelaje)</th>
-                  <th class="py-3 px-5 font-mono-tech" data-en="Shot Capacity / Output" data-es="Capacidad de Tiro (Gramaje)">Capacidad de Tiro (Gramaje)</th>
+                  <th class="py-3 px-5" data-en="Quantity" data-es="Cant.">Quantity</th>
+                  <th class="py-3 px-5" data-en="Clamping Force" data-es="Fuerza de Cierre (Tonelaje)">Clamping Force</th>
+                  <th class="py-3 px-5 font-mono-tech" data-en="Shot Capacity / Output" data-es="Capacidad de Inyección (Gramaje)">Shot Capacity / Output</th>
                 </tr>
               </thead>
               <tbody class="divide-y divide-slate-800 text-slate-200 font-medium font-mono-tech">
                 <tr>
                   <td class="py-3 px-5 font-bold text-white">1&times;</td>
-                  <td class="py-3 px-5 text-slate-300 font-sans" data-en="120 Ton Press" data-es="Inyectora de 120 Toneladas">Inyectora de 120 Toneladas</td>
-                  <td class="py-3 px-5 text-slate-400" data-en="107g (Precision caps &amp; fittings)" data-es="Hasta 107 g (Tapas y piezas de precisión)">Hasta 107 g (Tapas y piezas de precisión)</td>
+                  <td class="py-3 px-5 text-slate-300 font-sans" data-en="120 Ton Press" data-es="Inyectora de 120 Toneladas">120 Ton Press</td>
+                  <td class="py-3 px-5 text-slate-400" data-en="107g (Precision caps &amp; fittings)" data-es="Hasta 107 g (Tapas y piezas de precisión)">107g (Precision caps &amp; fittings)</td>
                 </tr>
                 <tr>
                   <td class="py-3 px-5 font-bold text-white">4&times;</td>
-                  <td class="py-3 px-5 text-slate-300 font-sans" data-en="160 Ton Presses" data-es="Inyectoras de 160 Toneladas">Inyectoras de 160 Toneladas</td>
-                  <td class="py-3 px-5 text-slate-400" data-en="298g (Technical enclosures)" data-es="Hasta 298 g (Gabinetes y carcasas técnicas)">Hasta 298 g (Gabinetes y carcasas técnicas)</td>
+                  <td class="py-3 px-5 text-slate-300 font-sans" data-en="160 Ton Presses" data-es="Inyectoras de 160 Toneladas">160 Ton Presses</td>
+                  <td class="py-3 px-5 text-slate-400" data-en="298g (Technical enclosures)" data-es="Hasta 298 g (Gabinetes y carcasas técnicas)">298g (Technical enclosures)</td>
                 </tr>
                 <tr>
                   <td class="py-3 px-5 font-bold text-white">1&times;</td>
-                  <td class="py-3 px-5 text-slate-300 font-sans" data-en="170 Ton Press" data-es="Inyectora de 170 Toneladas">Inyectora de 170 Toneladas</td>
-                  <td class="py-3 px-5 text-slate-400" data-en="310g (Component housings)" data-es="Hasta 310 g (Carcasas y componentes)">Hasta 310 g (Carcasas y componentes)</td>
+                  <td class="py-3 px-5 text-slate-300 font-sans" data-en="170 Ton Press" data-es="Inyectora de 170 Toneladas">170 Ton Press</td>
+                  <td class="py-3 px-5 text-slate-400" data-en="310g (Component housings)" data-es="Hasta 310 g (Carcasas y componentes)">310g (Component housings)</td>
                 </tr>
                 <tr>
                   <td class="py-3 px-5 font-bold text-white">2&times;</td>
-                  <td class="py-3 px-5 text-slate-300 font-sans" data-en="210 Ton Presses" data-es="Inyectoras de 210 Toneladas">Inyectoras de 210 Toneladas</td>
-                  <td class="py-3 px-5 text-slate-400" data-en="429g (Structural parts)" data-es="Hasta 429 g (Piezas estructurales)">Hasta 429 g (Piezas estructurales)</td>
+                  <td class="py-3 px-5 text-slate-300 font-sans" data-en="210 Ton Presses" data-es="Inyectoras de 210 Toneladas">210 Ton Presses</td>
+                  <td class="py-3 px-5 text-slate-400" data-en="429g (Structural parts)" data-es="Hasta 429 g (Piezas estructurales)">429g (Structural parts)</td>
                 </tr>
                 <tr>
                   <td class="py-3 px-5 font-bold text-white">1&times;</td>
-                  <td class="py-3 px-5 text-slate-300 font-sans" data-en="250 Ton Press" data-es="Inyectora de 250 Toneladas">Inyectora de 250 Toneladas</td>
-                  <td class="py-3 px-5 text-slate-400" data-en="625g (Heavy moldings)" data-es="Hasta 625 g (Molduras de mayor calibre)">Hasta 625 g (Molduras de mayor calibre)</td>
+                  <td class="py-3 px-5 text-slate-300 font-sans" data-en="250 Ton Press" data-es="Inyectora de 250 Toneladas">250 Ton Press</td>
+                  <td class="py-3 px-5 text-slate-400" data-en="625g (Heavy moldings)" data-es="Hasta 625 g (Molduras de mayor calibre)">625g (Heavy moldings)</td>
                 </tr>
                 <tr class="bg-blue-950/60 border-y border-blue-500/30">
                   <td class="py-3 px-5 font-bold text-blue-400">3&times;</td>
-                  <td class="py-3 px-5 font-bold text-white font-sans" data-en="320T &bull; 420T &bull; 650T Heavy-Duty" data-es="Inyectoras de Alto Tonelaje: 320T &bull; 420T &bull; 650T">Inyectoras de Alto Tonelaje: 320T &bull; 420T &bull; 650T</td>
-                  <td class="py-3 px-5 font-bold text-blue-400" data-en="Up to 2,500g (2.5 kg Large parts)" data-es="Hasta 2,500 g (Piezas grandes de 2.5 kg)">Hasta 2,500 g (Piezas grandes de 2.5 kg)</td>
+                  <td class="py-3 px-5 font-bold text-white font-sans" data-en="320T &bull; 420T &bull; 650T Heavy-Duty" data-es="Inyectoras de Alto Tonelaje: 320T &bull; 420T &bull; 650T">320T &bull; 420T &bull; 650T Heavy-Duty</td>
+                  <td class="py-3 px-5 font-bold text-blue-400" data-en="Up to 2,500g (2.5 kg Large parts)" data-es="Hasta 2,500 g (Piezas grandes de 2.5 kg)">Up to 2,500g (2.5 kg Large parts)</td>
                 </tr>
                 <tr>
                   <td class="py-3 px-5 font-bold text-white">1&times;</td>
-                  <td class="py-3 px-5 text-slate-300 font-sans" data-en="Flat Sheet Extrusion Line (120cm)" data-es="Línea de Extrusión de Lámina Plana (120 cm ancho)">Línea de Extrusión de Lámina Plana (120 cm ancho)</td>
-                  <td class="py-3 px-5 text-slate-400" data-en="400 kg/hr continuous output" data-es="400 kg/hr de producción continua">400 kg/hr de producción continua</td>
+                  <td class="py-3 px-5 text-slate-300 font-sans" data-en="Flat Sheet Extrusion Line (120cm)" data-es="Línea de Extrusión de Lámina Plana (120 cm ancho)">Flat Sheet Extrusion Line (120cm)</td>
+                  <td class="py-3 px-5 text-slate-400" data-en="400 kg/hr continuous output" data-es="400 kg/hr de producción continua">400 kg/hr continuous output</td>
                 </tr>
               </tbody>
             </table>
@@ -360,117 +361,117 @@
     </div>
   </section>
 
-  <!-- ==================== RESINAS Y MATERIALES ==================== -->
+  <!-- ==================== MATERIALS & TECHNICAL RESINS ==================== -->
   <section id="materials" class="py-20 bg-[#0F1C33] text-white border-b border-slate-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="mb-12">
-        <p class="text-xs font-bold uppercase tracking-widest text-blue-400" data-en="Material Science" data-es="Ciencia de Materiales">Ciencia de Materiales</p>
-        <h2 class="text-3xl sm:text-4xl font-black text-white mt-1" data-en="Engineered Resins &amp; Polymer Selection" data-es="Resinas y Polímeros de Ingeniería">Resinas y Polímeros de Ingeniería</h2>
-        <p class="text-sm text-slate-400 mt-2" data-en="Certified raw materials processed to exact melt indices and tensile requirements." data-es="Resinas con certificado de calidad, procesadas conforme a índice de fluidez (MFI) y resistencia mecánica.">Resinas con certificado de calidad, procesadas conforme a índice de fluidez (MFI) y resistencia mecánica.</p>
+        <p class="text-xs font-bold uppercase tracking-widest text-blue-400" data-en="Material Science" data-es="Ciencia de Materiales">Material Science</p>
+        <h2 class="text-3xl sm:text-4xl font-black text-white mt-1" data-en="Engineered Resins &amp; Polymer Selection" data-es="Resinas y Polímeros de Ingeniería">Engineered Resins &amp; Polymer Selection</h2>
+        <p class="text-sm text-slate-400 mt-2" data-en="Certified raw materials processed to exact melt indices and tensile requirements." data-es="Resinas con certificado de calidad, procesadas conforme a índice de fluidez (MFI) y resistencia mecánica.">Certified raw materials processed to exact melt indices and tensile requirements.</p>
       </div>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         <div class="p-6 rounded-2xl bg-[#111E38] border border-slate-800 shadow-md">
-          <span class="text-xs font-mono-tech text-blue-400 font-bold" data-en="Commodity Resins" data-es="Termoplásticos de Gran Consumo">Termoplásticos de Gran Consumo</span>
+          <span class="text-xs font-mono-tech text-blue-400 font-bold" data-en="Commodity Resins" data-es="Termoplásticos de Gran Consumo">Commodity Resins</span>
           <h4 class="text-lg font-bold text-white mt-1">PP &bull; HDPE &bull; LDPE</h4>
           <p class="text-xs text-slate-400 mt-2 leading-relaxed" data-en="High-flow polypropylene and polyethylene for food packaging, chemical-resistant containers, and agricultural fittings." data-es="Polipropileno y polietileno de alta fluidez para envases grado alimenticio, contenedores químicos y accesorios agrícolas.">
-            Polipropileno y polietileno de alta fluidez para envases grado alimenticio, contenedores químicos y accesorios agrícolas.
+            High-flow polypropylene and polyethylene for food packaging, chemical-resistant containers, and agricultural fittings.
           </p>
         </div>
 
         <div class="p-6 rounded-2xl bg-[#111E38] border border-slate-800 shadow-md">
-          <span class="text-xs font-mono-tech text-blue-400 font-bold" data-en="Engineering Thermoplastics" data-es="Grado Ingeniería">Grado Ingeniería</span>
+          <span class="text-xs font-mono-tech text-blue-400 font-bold" data-en="Engineering Thermoplastics" data-es="Grado Ingeniería">Engineering Thermoplastics</span>
           <h4 class="text-lg font-bold text-white mt-1">ABS &bull; PC &bull; PC/ABS</h4>
           <p class="text-xs text-slate-400 mt-2 leading-relaxed" data-en="High impact resistance, structural rigidity, and cosmetic surface finishes for electronics and hardware housings." data-es="Resinas de alta resistencia al impacto, rigidez dimensional y acabados cosméticos para electrónica y carcasas.">
-            Resinas de alta resistencia al impacto, rigidez dimensional y acabados cosméticos para electrónica y carcasas.
+            High impact resistance, structural rigidity, and cosmetic surface finishes for electronics and hardware housings.
           </p>
         </div>
 
         <div class="p-6 rounded-2xl bg-[#111E38] border border-slate-800 shadow-md">
-          <span class="text-xs font-mono-tech text-blue-400 font-bold" data-en="Structural Polyamides" data-es="Poliamidas Estructurales">Poliamidas Estructurales</span>
+          <span class="text-xs font-mono-tech text-blue-400 font-bold" data-en="Structural Polyamides" data-es="Poliamidas Estructurales">Structural Polyamides</span>
           <h4 class="text-lg font-bold text-white mt-1">Nylon (PA6 / PA66)</h4>
           <p class="text-xs text-slate-400 mt-2 leading-relaxed" data-en="Unfilled and glass-filled blends for mechanical wear resistance, high thermal deflection, and gear components." data-es="Nylon natural o con carga de fibra de vidrio para componentes de desgaste mecánico, engranes y alta resistencia térmica.">
-            Nylon natural o con carga de fibra de vidrio para componentes de desgaste mecánico, engranes y alta resistencia térmica.
+            Unfilled and glass-filled blends for mechanical wear resistance, high thermal deflection, and gear components.
           </p>
         </div>
 
         <div class="p-6 rounded-2xl bg-[#111E38] border border-slate-800 shadow-md">
-          <span class="text-xs font-mono-tech text-blue-400 font-bold" data-en="Additives &amp; Masterbatches" data-es="Aditivos y Masterbatch">Aditivos y Masterbatch</span>
-          <h4 class="text-lg font-bold text-white mt-1">UV &bull; Anti-Estático &bull; Color</h4>
+          <span class="text-xs font-mono-tech text-blue-400 font-bold" data-en="Additives &amp; Masterbatches" data-es="Aditivos y Masterbatch">Additives &amp; Masterbatches</span>
+          <h4 class="text-lg font-bold text-white mt-1" data-en="UV &bull; Anti-Static &bull; Color" data-es="UV &bull; Anti-Estático &bull; Color">UV &bull; Anti-Static &bull; Color</h4>
           <p class="text-xs text-slate-400 mt-2 leading-relaxed" data-en="Custom color matching (Pantone/RAL), UV weathering stabilizers for outdoor exposure, and flame retardants (UL94)." data-es="Igualación de color a la medida (Pantone/RAL), aditivos de protección UV para intemperie y retardantes de flama UL94.">
-            Igualación de color a la medida (Pantone/RAL), aditivos de protección UV para intemperie y retardantes de flama UL94.
+            Custom color matching (Pantone/RAL), UV weathering stabilizers for outdoor exposure, and flame retardants (UL94).
           </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ==================== SECTORES ==================== -->
+  <!-- ==================== APPLICATIONS ==================== -->
   <section id="products" class="py-20 bg-[#0A1426] text-white border-b border-slate-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="mb-12">
         <span class="inline-block px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400 text-xs font-mono-tech font-bold uppercase tracking-widest mb-2" data-en="Production Versatility" data-es="Sectores Industriales">
-          Sectores Industriales
+          Production Versatility
         </span>
-        <h2 class="text-3xl sm:text-4xl font-black text-white mt-1" data-en="Engineered Parts Across Industries" data-es="Piezas Técnicas por Industria">Piezas Técnicas por Industria</h2>
+        <h2 class="text-3xl sm:text-4xl font-black text-white mt-1" data-en="Engineered Parts Across Industries" data-es="Piezas Técnicas por Industria">Engineered Parts Across Industries</h2>
       </div>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         <div class="p-6 rounded-2xl bg-[#111E38] border border-slate-800 shadow-lg hover:border-slate-700 transition">
           <div class="text-3xl mb-3">🌱</div>
-          <h4 class="font-bold text-white text-base" data-en="Farming &amp; Agriculture" data-es="Agroindustria">Agroindustria</h4>
+          <h4 class="font-bold text-white text-base" data-en="Farming &amp; Agriculture" data-es="Agroindustria">Farming &amp; Agriculture</h4>
           <p class="text-xs text-slate-400 mt-2 leading-relaxed" data-en="Drip irrigation connectors, greenhouse watering fittings, nursery pots, and rugged field crates." data-es="Conectores para riego por goteo, goteros, macetas de vivero y cajas plásticas para cosecha de campo.">
-            Conectores para riego por goteo, goteros, macetas de vivero y cajas plásticas para cosecha de campo.
+            Drip irrigation connectors, greenhouse watering fittings, nursery pots, and rugged field crates.
           </p>
         </div>
 
         <div class="p-6 rounded-2xl bg-[#111E38] border border-slate-800 shadow-lg hover:border-slate-700 transition">
           <div class="text-3xl mb-3">☕</div>
-          <h4 class="font-bold text-white text-base" data-en="Food &amp; Beverage" data-es="Alimentos y Bebidas">Alimentos y Bebidas</h4>
+          <h4 class="font-bold text-white text-base" data-en="Food &amp; Beverage" data-es="Alimentos y Bebidas">Food &amp; Beverage</h4>
           <p class="text-xs text-slate-400 mt-2 leading-relaxed" data-en="Sanitary food-contact containers, takeout closures, beverage stirrers, and tamper-evident packaging." data-es="Envases de resina grado alimenticio FDA, tapas herméticas, agitadores y sellos de inviolabilidad.">
-            Envases de resina grado alimenticio FDA, tapas herméticas, agitadores y sellos de inviolabilidad.
+            Sanitary food-contact containers, takeout closures, beverage stirrers, and tamper-evident packaging.
           </p>
         </div>
 
         <div class="p-6 rounded-2xl bg-[#111E38] border border-slate-800 shadow-lg hover:border-slate-700 transition">
           <div class="text-3xl mb-3">💊</div>
-          <h4 class="font-bold text-white text-base" data-en="Health &amp; Pharma" data-es="Médico y Farmacéutico">Médico y Farmacéutico</h4>
+          <h4 class="font-bold text-white text-base" data-en="Health &amp; Pharma" data-es="Médico y Farmacéutico">Health &amp; Pharma</h4>
           <p class="text-xs text-slate-400 mt-2 leading-relaxed" data-en="Sanitary diagnostic vials, safety pill closures, laboratory trays, and cleanroom-molded disposable components." data-es="Viales de diagnóstico, tapas con seguro para niños, charolas de laboratorio y componentes desechables de precisión.">
-            Viales de diagnóstico, tapas con seguro para niños, charolas de laboratorio y componentes desechables de precisión.
+            Sanitary diagnostic vials, safety pill closures, laboratory trays, and cleanroom-molded disposable components.
           </p>
         </div>
 
         <div class="p-6 rounded-2xl bg-[#111E38] border border-slate-800 shadow-lg hover:border-slate-700 transition">
           <div class="text-3xl mb-3">🔧</div>
-          <h4 class="font-bold text-white text-base" data-en="Hardware &amp; Industrial" data-es="Ferretero e Industrial">Ferretero e Industrial</h4>
+          <h4 class="font-bold text-white text-base" data-en="Hardware &amp; Industrial" data-es="Ferretero e Industrial">Hardware &amp; Industrial</h4>
           <p class="text-xs text-slate-400 mt-2 leading-relaxed" data-en="Structural mounting brackets, tool handles, protective electrical junction boxes, and equipment housings." data-es="Soportes estructurales, manerales para herramienta, cajas eléctricas de conexión y gabinetes mecánicos.">
-            Soportes estructurales, manerales para herramienta, cajas eléctricas de conexión y gabinetes mecánicos.
+            Structural mounting brackets, tool handles, protective electrical junction boxes, and equipment housings.
           </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ==================== COTIZACIÓN Y CONTACTO ==================== -->
+  <!-- ==================== RFQ & CONTACT ==================== -->
   <section id="contact" class="py-20 bg-[#070D1E] text-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
         
         <div class="lg:col-span-5">
           <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-950 border border-blue-500/30 text-blue-400 text-xs font-bold uppercase tracking-widest mb-4">
-            <span data-en="Direct Engineering Contact" data-es="Atención Técnica Directa">Atención Técnica Directa</span>
+            <span data-en="Direct Engineering Contact" data-es="Atención Técnica Directa">Direct Engineering Contact</span>
           </div>
           <h2 class="text-4xl font-black text-white leading-tight">
-            <span data-en="Have a project to quote?" data-es="¿Tiene un proyecto en puerta?">¿Tiene un proyecto en puerta?</span><br/>
-            <span data-en="Let's talk tooling." data-es="Hablemos de moldes y producción.">Hablemos de moldes y producción.</span>
+            <span data-en="Have a project to quote?" data-es="¿Tiene un proyecto en puerta?">Have a project to quote?</span><br/>
+            <span data-en="Let's talk tooling." data-es="Hablemos de moldes y producción.">Let's talk tooling.</span>
           </h2>
           <p class="text-sm text-slate-300 mt-4 leading-relaxed" data-en="Whether you have completed 3D STEP files, rough concepts, or an existing tool you wish to transfer to Mexico, connect with William directly for immediate assessment." data-es="Ya sea que cuente con archivos 3D STEP listos, planos 2D o busque transferir un molde existente para maquila en México, le atendemos de manera directa y técnica.">
-            Ya sea que cuente con archivos 3D STEP listos, planos 2D o busque transferir un molde existente para maquila en México, le atendemos de manera directa y técnica.
+            Whether you have completed 3D STEP files, rough concepts, or an existing tool you wish to transfer to Mexico, connect with William directly for immediate assessment.
           </p>
 
           <div class="mt-8 space-y-4">
             <!-- WhatsApp -->
-            <a id="cardWhatsappBtn" href="https://wa.me/523322555211?text=Hola%20William,%20me%20comunico%20para%20cotizar%20un%20proyecto%20de%20inyecci%C3%B3n%20de%20pl%C3%A1stico%20con%20NM%26M" 
+            <a id="cardWhatsappBtn" href="https://wa.me/523322555211?text=Hello%20William,%20I'm%20reaching%20out%20with%20a%20plastic%20injection%20molding%20project" 
                target="_blank" rel="noopener noreferrer" 
                class="flex items-center gap-4 p-4 rounded-2xl bg-[#25D366]/15 border border-[#25D366]/40 hover:bg-[#25D366]/25 transition group">
               <div class="w-12 h-12 rounded-xl bg-[#25D366] text-white flex items-center justify-center shrink-0 shadow-md">
@@ -479,76 +480,76 @@
                 </svg>
               </div>
               <div>
-                <p class="text-xs font-extrabold text-[#25D366] uppercase tracking-wider" data-en="WhatsApp &bull; Ask for William" data-es="WhatsApp Directo con William">WhatsApp Directo con William</p>
+                <p class="text-xs font-extrabold text-[#25D366] uppercase tracking-wider" data-en="WhatsApp &bull; Ask for William" data-es="WhatsApp Directo con William">WhatsApp &bull; Ask for William</p>
                 <p class="text-base font-bold text-white group-hover:text-[#25D366] transition">+52 (332) 255-5211</p>
-                <p class="text-[11px] text-slate-300" data-en="Direct mobile chat" data-es="Respuesta rápida por mensaje">Respuesta rápida por mensaje</p>
+                <p class="text-[11px] text-slate-300" data-en="Direct mobile chat" data-es="Respuesta rápida por mensaje">Direct mobile chat</p>
               </div>
             </a>
 
-            <!-- Correo Directo -->
-            <a href="mailto:info@nichemarkettraders.com?subject=Cotizacion%20de%20Molde%20o%20Inyeccion%20-%20NM%26M" 
+            <!-- Direct Email -->
+            <a id="emailLinkBtn" href="mailto:info@nichemarkettraders.com?subject=Tooling%20RFQ%20for%20William" 
                class="flex items-center gap-4 p-4 rounded-2xl bg-slate-800/80 border border-slate-700 hover:border-[#0066CC] transition group">
               <div class="w-12 h-12 rounded-xl bg-blue-600 text-white flex items-center justify-center shrink-0 shadow-md">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
               </div>
               <div>
-                <p class="text-xs font-extrabold text-slate-400 uppercase tracking-wider" data-en="Technical RFQ Submissions" data-es="Envío de Archivos y Planos">Envío de Archivos y Planos</p>
+                <p class="text-xs font-extrabold text-slate-400 uppercase tracking-wider" data-en="Technical RFQ Submissions" data-es="Envío de Archivos y Planos">Technical RFQ Submissions</p>
                 <p class="text-base font-bold text-white group-hover:text-blue-400 transition">info@nichemarkettraders.com</p>
-                <p class="text-[11px] text-slate-400" data-en="Guaranteed 24-hour turnaround" data-es="Respuesta técnica en menos de 24 horas">Respuesta técnica en menos de 24 horas</p>
+                <p class="text-[11px] text-slate-400" data-en="Guaranteed 24-hour turnaround" data-es="Respuesta técnica en menos de 24 horas">Guaranteed 24-hour turnaround</p>
               </div>
             </a>
           </div>
         </div>
 
-        <!-- Formulario RFQ -->
+        <!-- RFQ Form -->
         <div class="lg:col-span-7 bg-[#111E38] text-slate-100 p-8 sm:p-10 rounded-2xl border border-slate-800 shadow-2xl">
-          <h3 class="text-xl font-extrabold text-white" data-en="Project Scope &amp; RFQ Details" data-es="Datos para Cotización">Datos para Cotización</h3>
-          <p class="text-xs text-slate-400 mt-1" data-en="Provide your part details below to initialize a DFM check and tooling estimate." data-es="Indique los datos de su pieza para realizar la revisión DFM y preparar su propuesta económica.">Indique los datos de su pieza para realizar la revisión DFM y preparar su propuesta económica.</p>
+          <h3 class="text-xl font-extrabold text-white" data-en="Project Scope &amp; RFQ Details" data-es="Datos para Cotización">Project Scope &amp; RFQ Details</h3>
+          <p class="text-xs text-slate-400 mt-1" data-en="Provide your part details below to initialize a DFM check and tooling estimate." data-es="Indique los datos de su pieza para realizar la revisión DFM y preparar su propuesta económica.">Provide your part details below to initialize a DFM check and tooling estimate.</p>
 
           <form id="projectForm" class="mt-6 space-y-4">
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label class="block text-xs font-bold text-slate-300 mb-1" data-en="Your Name" data-es="Nombre y Apellido">Nombre y Apellido</label>
-                <input type="text" id="senderName" required placeholder="ej. Ing. Carlos Mendoza" data-en-placeholder="e.g. Alex Henderson" data-es-placeholder="ej. Ing. Carlos Mendoza" class="w-full px-3.5 py-2.5 bg-[#0B132B] border border-slate-700 rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none focus:border-blue-500" />
+                <label class="block text-xs font-bold text-slate-300 mb-1" data-en="Your Name" data-es="Nombre y Apellido">Your Name</label>
+                <input type="text" id="senderName" required placeholder="e.g. Alex Henderson" data-en-placeholder="e.g. Alex Henderson" data-es-placeholder="ej. Ing. Carlos Mendoza" class="w-full px-3.5 py-2.5 bg-[#0B132B] border border-slate-700 rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none focus:border-blue-500" />
               </div>
               <div>
-                <label class="block text-xs font-bold text-slate-300 mb-1" data-en="Company / Organization" data-es="Empresa / Razón Social">Empresa / Razón Social</label>
-                <input type="text" id="senderCompany" placeholder="ej. Industrias Plásticas de México" data-en-placeholder="e.g. Apex Engineering Corp" data-es-placeholder="ej. Industrias Plásticas de México" class="w-full px-3.5 py-2.5 bg-[#0B132B] border border-slate-700 rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none focus:border-blue-500" />
+                <label class="block text-xs font-bold text-slate-300 mb-1" data-en="Company / Organization" data-es="Empresa / Razón Social">Company / Organization</label>
+                <input type="text" id="senderCompany" placeholder="e.g. Apex Engineering Corp" data-en-placeholder="e.g. Apex Engineering Corp" data-es-placeholder="ej. Industrias Plásticas de México" class="w-full px-3.5 py-2.5 bg-[#0B132B] border border-slate-700 rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none focus:border-blue-500" />
               </div>
             </div>
 
             <div>
-              <label class="block text-xs font-bold text-slate-300 mb-1" data-en="Business Email" data-es="Correo Electrónico">Correo Electrónico</label>
-              <input type="email" id="senderEmail" required placeholder="carlos@empresa.com.mx" data-en-placeholder="alex@apexengineering.com" data-es-placeholder="carlos@empresa.com.mx" class="w-full px-3.5 py-2.5 bg-[#0B132B] border border-slate-700 rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none focus:border-blue-500" />
+              <label class="block text-xs font-bold text-slate-300 mb-1" data-en="Business Email" data-es="Correo Electrónico">Business Email</label>
+              <input type="email" id="senderEmail" required placeholder="alex@apexengineering.com" data-en-placeholder="alex@apexengineering.com" data-es-placeholder="carlos@empresa.com.mx" class="w-full px-3.5 py-2.5 bg-[#0B132B] border border-slate-700 rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none focus:border-blue-500" />
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label class="block text-xs font-bold text-slate-300 mb-1" data-en="Target Resin / Material" data-es="Resina Requerida">Resina Requerida</label>
-                <input type="text" id="resinType" placeholder="ej. Polipropileno, ABS, Nylon con carga" data-en-placeholder="e.g. PP, ABS, Nylon 6/6, PC" data-es-placeholder="ej. Polipropileno, ABS, Nylon con carga" class="w-full px-3.5 py-2.5 bg-[#0B132B] border border-slate-700 rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none focus:border-blue-500" />
+                <label class="block text-xs font-bold text-slate-300 mb-1" data-en="Target Resin / Material" data-es="Resina Requerida">Target Resin / Material</label>
+                <input type="text" id="resinType" placeholder="e.g. PP, ABS, Nylon 6/6, PC" data-en-placeholder="e.g. PP, ABS, Nylon 6/6, PC" data-es-placeholder="ej. Polipropileno, ABS, Nylon con carga" class="w-full px-3.5 py-2.5 bg-[#0B132B] border border-slate-700 rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none focus:border-blue-500" />
               </div>
               <div>
-                <label class="block text-xs font-bold text-slate-300 mb-1" data-en="Estimated Annual Volume" data-es="Volumen Estimado (Lote / Anual)">Volumen Estimado (Lote / Anual)</label>
-                <input type="text" id="estVolume" placeholder="ej. 5,000 lote piloto / 50,000 al año" data-en-placeholder="e.g. 5,000 pilot / 50k annual" data-es-placeholder="ej. 5,000 lote piloto / 50,000 al año" class="w-full px-3.5 py-2.5 bg-[#0B132B] border border-slate-700 rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none focus:border-blue-500" />
+                <label class="block text-xs font-bold text-slate-300 mb-1" data-en="Estimated Annual Volume" data-es="Volumen Estimado (Lote / Anual)">Estimated Annual Volume</label>
+                <input type="text" id="estVolume" placeholder="e.g. 5,000 pilot / 50k annual" data-en-placeholder="e.g. 5,000 pilot / 50k annual" data-es-placeholder="ej. 5,000 lote piloto / 50,000 al año" class="w-full px-3.5 py-2.5 bg-[#0B132B] border border-slate-700 rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none focus:border-blue-500" />
               </div>
             </div>
 
             <div>
-              <label class="block text-xs font-bold text-slate-300 mb-1" data-en="Project Maturity" data-es="Estatus del Proyecto">Estatus del Proyecto</label>
+              <label class="block text-xs font-bold text-slate-300 mb-1" data-en="Project Maturity" data-es="Estatus del Proyecto">Project Maturity</label>
               <select id="projectStage" class="w-full px-3.5 py-2.5 bg-[#0B132B] border border-slate-700 rounded-xl text-sm text-white focus:outline-none focus:border-blue-500">
-                <option value="3D CAD Ready (.STEP / .IGS)" data-en="3D CAD design completed (.STEP / .IGS / .SLDPRT)" data-es="Archivo CAD 3D terminado (.STEP / .IGS / .SLDPRT)">Archivo CAD 3D terminado (.STEP / .IGS / .SLDPRT)</option>
-                <option value="Tool Transfer (Existing Mold)" data-en="Tool transfer (mold already built, seeking better production)" data-es="Maquila con molde existente (Transferencia de herramental)">Maquila con molde existente (Transferencia de herramental)</option>
-                <option value="Concept / 2D Drawings" data-en="Early prototype / 2D sketches" data-es="Plano 2D / Muestra física o prototipo para replicar">Plano 2D / Muestra física o prototipo para replicar</option>
-                <option value="Exploring Feasibility" data-en="Budget exploration &amp; feasibility assessment" data-es="Evaluación de factibilidad y costeo preliminar">Evaluación de factibilidad y costeo preliminar</option>
+                <option value="3D CAD Ready (.STEP / .IGS)" data-en="3D CAD design completed (.STEP / .IGS / .SLDPRT)" data-es="Archivo CAD 3D terminado (.STEP / .IGS / .SLDPRT)">3D CAD design completed (.STEP / .IGS / .SLDPRT)</option>
+                <option value="Tool Transfer (Existing Mold)" data-en="Tool transfer (mold already built, seeking better production)" data-es="Maquila con molde existente (Transferencia de herramental)">Tool transfer (mold already built, seeking better production)</option>
+                <option value="Concept / 2D Drawings" data-en="Early prototype / 2D sketches" data-es="Plano 2D / Muestra física o prototipo para replicar">Early prototype / 2D sketches</option>
+                <option value="Exploring Feasibility" data-en="Budget exploration &amp; feasibility assessment" data-es="Evaluación de factibilidad y costeo preliminar">Budget exploration &amp; feasibility assessment</option>
               </select>
             </div>
 
             <div class="pt-2">
               <button type="submit" id="submitFormBtn" class="w-full py-3.5 px-4 rounded-xl text-sm font-extrabold text-white bg-[#0066CC] hover:bg-blue-600 transition shadow-lg shadow-blue-500/25" data-en="Send RFQ to William &rarr;" data-es="Enviar Datos a William &rarr;">
-                Enviar Datos a William &rarr;
+                Send RFQ to William &rarr;
               </button>
               <p class="text-[11px] text-center text-slate-400 mt-2" data-en="Clicking opens an email message where you can attach your 3D CAD files (.STEP, .STP, .IGS) directly." data-es="Al enviar se abrirá su gestor de correo con la plantilla lista para adjuntar sus archivos 3D o planos.">
-                Al enviar se abrirá su gestor de correo con la plantilla lista para adjuntar sus archivos 3D o planos.
+                Clicking opens an email message where you can attach your 3D CAD files (.STEP, .STP, .IGS) directly.
               </p>
             </div>
           </form>
@@ -558,24 +559,23 @@
     </div>
   </section>
 
-  <!-- ==================== PIE DE PÁGINA ==================== -->
+  <!-- ==================== FOOTER ==================== -->
   <footer class="bg-black text-slate-400 py-8 border-t border-slate-800 text-xs">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
       <div class="flex items-center gap-2">
         <span class="font-bold text-white tracking-wider">NM&amp;M</span>
         <span class="text-slate-600">|</span>
-        <span data-en="Mexico Precision Plastics Nearshoring &bull; Guadalajara, Jalisco" data-es="Inyección de Plásticos y Moldes en México &bull; Guadalajara, Jalisco">Inyección de Plásticos y Moldes en México &bull; Guadalajara, Jalisco</span>
+        <span data-en="Mexico Precision Plastics Nearshoring &bull; Guadalajara, Jalisco" data-es="Inyección de Plásticos y Moldes en México &bull; Guadalajara, Jalisco">Mexico Precision Plastics Nearshoring &bull; Guadalajara, Jalisco</span>
       </div>
-      <p class="text-slate-500">
-        &copy; 2026 Niche Market &amp; Manufacturing. Todos los derechos reservados.
+      <p id="copyrightText" class="text-slate-500" data-en="&copy; 2026 Niche Market &amp; Manufacturing. All rights reserved." data-es="&copy; 2026 Niche Market &amp; Manufacturing. Todos los derechos reservados.">
+        &copy; 2026 Niche Market &amp; Manufacturing. All rights reserved.
       </p>
     </div>
   </footer>
 
-  <!-- ==================== CONTROL DE IDIOMA Y CORREO ==================== -->
+  <!-- ==================== TRANSLATION SCRIPT ==================== -->
   <script>
-    // Inicializa en español por defecto
-    let currentLang = localStorage.getItem('nmm_lang') || 'es';
+    let currentLang = localStorage.getItem('nmm_lang') || 'en';
 
     function setLanguage(lang) {
       currentLang = lang;
@@ -597,25 +597,25 @@
         document.documentElement.lang = 'en';
       }
 
-      // Reemplaza texto en elementos con atributos de idioma
+      // Update text in elements with data-en / data-es
       document.querySelectorAll('[data-en]').forEach(el => {
         const text = el.getAttribute(`data-${lang}`);
         if (text) el.innerHTML = text;
       });
 
-      // Actualiza placeholders
+      // Update placeholders
       document.querySelectorAll('[data-en-placeholder]').forEach(input => {
         const placeholderText = input.getAttribute(`data-${lang}-placeholder`);
         if (placeholderText) input.placeholder = placeholderText;
       });
 
-      // Actualiza opciones del selector
+      // Update dropdown options
       document.querySelectorAll('#projectStage option').forEach(opt => {
         const optionText = opt.getAttribute(`data-${lang}`);
         if (optionText) opt.textContent = optionText;
       });
 
-      // Enlaces de WhatsApp con mensaje contextualizado
+      // Update WhatsApp links
       const headerWa = document.getElementById('headerWhatsappBtn');
       const heroWa = document.getElementById('heroWhatsappBtn');
       const cardWa = document.getElementById('cardWhatsappBtn');
@@ -634,12 +634,12 @@
     }
 
     document.getElementById('langToggleBtn').addEventListener('click', function() {
-      setLanguage(currentLang === 'es' ? 'en' : 'es');
+      setLanguage(currentLang === 'en' ? 'es' : 'en');
     });
 
     setLanguage(currentLang);
 
-    // Manejo del formulario vía correo con formato profesional
+    // Form submission handler
     document.getElementById('projectForm').addEventListener('submit', function(e) {
       e.preventDefault();
       const name = document.getElementById('senderName').value;
